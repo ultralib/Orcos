@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orcos</title>
+</head>
+<body>
+    <nav>
+        <p class="logo">Orcos</p>
+    </nav>
+    <div id="app">
+        <aside class="side-left">
+            <p class="title">Elements</p>
+            <orcos-tree>
+                <orcos-node text="Panel">
+                    <orcos-node text="Some text"></orcos-node>
+                </orcos-node>
+            </orcos-tree>
+        </aside>
+        <main>
+
+        </main>
+        <aside class="side-right">
+            <p class="title">Properties</p>
+            
+
+        </aside>
+    </div>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>feather.replace()</script>
+    <script src="<%= htmlWebpackPlugin.files.js %>"></script>
+</body>
+</html>

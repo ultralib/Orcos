@@ -1,0 +1,120 @@
+html,body,#app {
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+
+    background-color: var(--color-2);
+}
+
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: var(--font-text);
+}
+
+hr {
+    border-color: var(--color-3);
+    border-width: 0.5px;
+
+    width: 100%;
+
+    margin: 0 -15px;
+}
+
+orcos-tree {
+    display: flex;
+    flex-direction: column;
+}
+orcos-node {
+    span {
+        padding: 5px 10px;
+
+        margin-bottom: 5px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        font-size: 18px;
+
+        background-color: var(--color-2);
+
+        border-radius: 6px;
+
+        svg {
+            width: 20px;
+            height: 20px;
+
+            margin-right: 5px;
+        }
+    }
+    > .nodes {
+        padding-left: 15px;
+    }
+}
+
+#app {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    width: 100vw;
+    height: 50px;
+
+    padding: 10px 15px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: #1a1a1a;
+    color: var(--color-2);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+    flex: 0 1 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-2);
+}
+
+aside {
+    width: 100%;
+    max-width: 250px;
+    background-color: var(--color-1);
+
+    padding: 20px 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    &.side-left {
+        flex: 1 0 0;
+
+        border-right: var(--border-width) solid var(--color-3);
+    }
+    &.side-right {
+        flex: 0 0 1;
+
+        border-left: var(--border-width) solid var(--color-3);
+    }
+
+    .title {
+        text-transform: uppercase;
+        color: var(--color-5-alpha);
+
+        margin-bottom: 15px;
+    }
+}
