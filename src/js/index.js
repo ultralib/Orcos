@@ -12,8 +12,8 @@ createPanZoom(document.querySelector('main'))
 import './components/OrcosRootComponent.js'
 import './components/OrcosTreeView.js'
 import './components/OrcosTreeNode.js'
-import './components/OrcosContextMenu.js'
 import './components/OrcosProperties.js'
+import './components/OrcosWindow.js'
 
 // Core
 const Project = new class {
@@ -67,7 +67,7 @@ const Project = new class {
         this.treeElement = document.querySelector('orcos-tree')
         this.treeElement.from(this.rootElement)
         this.treeElement.addEventListener('nodeadd', (e) => {
-            console.log('node add event')
+            this.addWindow.show()
         })
         this.treeElement.addEventListener('nodedelete', (e) => {
             // Remove linked
@@ -83,9 +83,6 @@ const Project = new class {
             // Attach to property editor
             this.propsElement.attachElement(e.detail.linked)
         })
-        // Tree context menu
-        this.contextMenu = document.querySelector('orcos-context-menu')
-        this.contextMenu.attachTo(this.treeElement)
 
         // Unselect elements when clicked on canvas
         document.querySelector('main').addEventListener('click', (e) => {
@@ -98,5 +95,8 @@ const Project = new class {
 
         // PropertyEditor component
         this.propsElement = document.querySelector('orcos-properties')
+
+        // Add element window
+        this.addWindow = document.querySelector('orcos-window#add-window')
     }
 }

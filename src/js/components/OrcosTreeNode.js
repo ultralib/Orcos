@@ -42,10 +42,10 @@ export const OrcosTreeNode = class extends HTMLElement {
     __render__() {
         this.innerHTML = `
             <span class="node-handle">
-                <svg class="close-icon" role="toggle" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                <svg class="close-icon" role="toggle" title="Toggle child elements" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
                 <span class="node-title">${ this.getAttribute('text') }</span>
-                ${ this.getAttribute('is-addable') === 'true' ? '<svg class="add-icon" role="add" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>' : ''}
-                ${ this.getAttribute('is-deletable') === 'true' ? '<svg class="delete-icon" role="delete" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>' : ''}
+                ${ this.getAttribute('is-addable') === 'true' ? '<svg class="add-icon" title="Add element inside" role="add" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>' : ''}
+                ${ this.getAttribute('is-deletable') === 'true' ? '<svg class="delete-icon" title="Delete element" role="delete" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>' : ''}
             </span>
             <div class="nodes">
                 ${ this.slot }
@@ -75,8 +75,8 @@ export const OrcosTreeNode = class extends HTMLElement {
         })
         // Select
         this.handle.onclick = (e) => {
-            e.stopPropagation()
-            if(e.target.tagName !== 'SVG') {
+            //e.stopPropagation()
+            if(e.currentTarget.classList.contains('node-handle')) {
                 this.select()
             }
         }
