@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/qrai/Orcos#readme",
   "dependencies": {
+    "@webcomponents/webcomponentsjs": "^2.6.0",
+    "panzoom": "^9.4.3",
     "webpack": "^5.73.0"
   },
   "devDependencies": {

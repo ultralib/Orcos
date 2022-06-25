@@ -13,11 +13,7 @@
     <div id="app">
         <aside class="side-left">
             <p class="title">Elements</p>
-            <orcos-tree>
-                <orcos-node text="Panel">
-                    <orcos-node text="Some text"></orcos-node>
-                </orcos-node>
-            </orcos-tree>
+            <orcos-tree></orcos-tree>
         </aside>
         <main>
 
@@ -25,12 +21,19 @@
         <aside class="side-right">
             <p class="title">Properties</p>
             
-
+            <orcos-properties></orcos-properties>
         </aside>
     </div>
 
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script>feather.replace()</script>
+    <orcos-context-menu> 
+        <ul class="menu"> 
+            <li class="rename"><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Rename</a></li> 
+            <li class="copy"><a href="#"><i class="fa fa-copy" aria-hidden="true"></i> Copy to</a></li> 
+            <li class="paste"><a href="#"><i class="fa fa-paste" aria-hidden="true"></i> Move to</a></li>
+            <li class="trash"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i> Delete</a></li> 
+        </ul> 
+    </orcos-context-menu> 
+    
     <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 </html>
