@@ -56,6 +56,8 @@ export const OrcosWindow = class extends HTMLElement {
                 ${ slot }
             </div>
         `
+
+        this.removeAttribute('title')
         
         // Draggable header
         this.makeDraggable()

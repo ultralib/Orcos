@@ -1,7 +1,7 @@
 export default {
     textualTags: [
         'P', 'SPAN', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6',
-        'SMALL', 'LABEL'
+        'SMALL', 'LABEL', 'A'
     ],
     nonvisualTags: [
         'STYLE', 'SCRIPT', 'LINK', 'META'

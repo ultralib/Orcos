@@ -32,22 +32,24 @@ export const OrcosRootComponent = class extends HTMLElement {
         this.innerHTML = template.inner || ''
     }
 
+    processElement(el) {
+        // If its text => make text editable
+        if(Utils.textualTags.includes(el.tagName)) {
+            el.setAttribute('contenteditable', '')
+            el.addEventListener('input', (e) => {
+                this.emit('nodeedit', e.target)
+            })
+        }
+
+        // Make selectable
+        el.addEventListener('click', (e) => {
+            this.emit('nodeselect', e.target)
+        })
+    }
+
     connectedCallback() {
         // Walk every element children of root
-        Utils.every(this, (el) => {
-            // If its text => make text editable
-            if(Utils.textualTags.includes(el.tagName)) {
-                el.setAttribute('contenteditable', '')
-                el.addEventListener('input', (e) => {
-                    this.emit('nodeedit', e.target)
-                })
-            }
-
-            // Make selectable
-            el.addEventListener('click', (e) => {
-                this.emit('nodeselect', e.target)
-            })
-        })
+        Utils.every(this, (el) => this.processElement(el))
 
         let shadow = this.attachShadow({ mode: 'closed' })
         shadow.innerHTML = `
