@@ -93,73 +93,6 @@ aside {
     }
 }
 
-.orcos-button {
-    padding: 6px;
-
-    background-color: var(--color-1);
-
-    outline: none;
-    border: 1px solid var(--color-3);
-    border-radius: var(--border-radius);
-
-    transition: 0.3s ease-in-out background, border-color;
-
-    &:hover {
-        background-color: var(--color-2);
-    }
-    &:focus,&.selected {
-        border: 1px solid var(--color-accent);
-        outline: 2px solid var(--color-accent-alpha);
-    }
-    &.selected {
-        background-color: var(--color-accent);
-        color: var(--color-1);
-    }
-}
-
-.orcos-list {
-    width: 100%;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 12px;
-
-    .orcos-list-item {
-        flex-grow: 1;
-        width: 30%;
-        height: max-content;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-
-        padding: 10px 16px;
-
-        background-color: var(--color-2);
-
-        border: 1px solid var(--color-3);
-        border-radius: var(--border-radius);
-
-        p {
-            user-select: none;
-        }
-        svg {
-            width: 30px;
-            height: 30px;
-
-            opacity: 0.5;
-        }
-
-        &:hover {
-            outline: 3px solid var(--color-accent-alpha);
-            border: 1px solid var(--color-accent);
-        }
-    }
-}
-
 .orcos-code {
     padding: 1px 4px;
 
@@ -187,6 +120,7 @@ orcos-node {
         display: flex;
         flex-direction: row;
         align-items: center;
+        gap: 5px;
 
         user-select: none;
 
@@ -202,6 +136,11 @@ orcos-node {
 
         .node-title {
             width: 100%;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
 
             white-space: nowrap;
             overflow: hidden;
@@ -227,8 +166,6 @@ orcos-node {
         svg {
             width: 20px;
             height: 20px;
-        
-            margin-right: 5px;
 
             cursor: pointer;
             
@@ -248,7 +185,8 @@ orcos-node {
 orcos-properties {
     display: flex;
     flex-direction: column;
-    //overflow-y: scroll;
+    overflow-x: visible;
+    overflow-y: scroll;
 
     .category {
         margin: 0 -15px;
@@ -299,45 +237,6 @@ orcos-properties {
 
         margin-bottom: 15px;
 
-        label {
-            margin-bottom: 8px;
-
-            color: var(--color-5-alpha);
-        
-            font-size: 14px;
-        }
-        input, select, textarea {
-            width: 100%;
-
-            padding: 8px 12px;
-
-            outline: none;
-
-            background-color: var(--color-1);
-            
-            border: 1px solid var(--color-3);
-            border-radius: var(--border-radius);
-
-            &:focus {
-                border: 1px solid var(--color-accent);
-                outline: 2px solid var(--color-accent-alpha);
-            }
-
-            &[type="color"] {
-                padding: 0;
-
-                -webkit-appearance: none;
-                border: none;
-
-                &::-webkit-color-swatch-wrapper {
-                    padding: 0;
-                } 
-                &::-webkit-color-swatch {
-                    border: none;
-                    border-radius: var(--border-radius);
-                }
-            }
-        }
         .property-field.buttons {
             display: flex;
             flex-direction: row;

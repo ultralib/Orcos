@@ -43,7 +43,15 @@ export const OrcosRootComponent = class extends HTMLElement {
 
         // Make selectable
         el.addEventListener('click', (e) => {
-            this.emit('nodeselect', e.target)
+            // Self
+            if(e.target.hasAttribute('orcos-linked'))
+                this.emit('nodeselect', e.target)
+            // Parent
+            else if(e.target.parentElement?.hasAttribute('orcos-linked'))
+                this.emit('nodeselect', e.target.parentElement)
+            // Current target
+            else
+                this.emit('nodeselect', e.currentTarget)
         })
     }
 

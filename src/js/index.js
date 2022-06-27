@@ -1,5 +1,8 @@
 import '../css/theme.scss'
 import '../css/core.scss'
+import '../css/components/button.scss'
+import '../css/components/input.scss'
+import '../css/components/list.scss'
 
 // Polyfills
 import '@webcomponents/webcomponentsjs/webcomponents-bundle'
@@ -14,6 +17,7 @@ import './components/OrcosTreeView.js'
 import './components/OrcosTreeNode.js'
 import './components/OrcosProperties.js'
 import './components/OrcosWindow.js'
+import './components/OrcosUnitsInput.js'
 
 // Core
 const Project = new class {
@@ -43,11 +47,12 @@ const Project = new class {
             }
         }
     }
+
     get elements() {
         const element = (tag, text, attrs) => {
             let _el = document.createElement(tag)
             // Text
-            if(text) _el.innerText = text
+            if(text) _el.innerHTML = text
             if(attrs) {
                 Object.keys(attrs).forEach(attrName => {
                     _el.setAttribute(attrName, attrs[attrName])
@@ -59,14 +64,19 @@ const Project = new class {
         return {
             text: element('p', 'Text'),
             link: element('a', 'Link', { href: '#' }),
-            image: element('img', null, { src: '' })
+            image: element('img', null, { 'orcos-name': 'Image', src: '' }),
+            list: element('ul', '<li>One</li>'),
+            panel: element('div', null, { 'orcos-name': 'Panel', style: 'display:block;' }),
+            grid: element('div', null, { 'orcos-name': 'Grid', style: 'display:grid;' })
+
+            //TODO: list, panel, grid, flex, input, checkbox
         }
     }
 
     constructor() {
         // Make root element
         this.rootElement = document.createElement('orcos-root-component')
-        this.rootElement.setAttribute('arcos-name', 'root')
+        this.rootElement.setAttribute('orcos-name', 'root')
         this.rootElement.useTemplate(this.templates['basic'])
         this.rootElement.addEventListener('nodeselect', (e) => {
             // Focus
@@ -102,8 +112,7 @@ const Project = new class {
 
             // Templates of elements
             this.addWindow.querySelectorAll('[data-template]').forEach(templateEl => {
-                templateEl.removeEventListener('click', listener)
-                templateEl.addEventListener('click', listener)
+                templateEl.onclick = listener
             })
         })
         this.treeElement.addEventListener('nodedelete', (e) => {

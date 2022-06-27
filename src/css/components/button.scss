@@ -1,0 +1,23 @@
+.orcos-button {
+    padding: 6px;
+
+    background-color: var(--color-1);
+
+    outline: none;
+    border: 1px solid var(--color-3);
+    border-radius: var(--border-radius);
+
+    transition: 0.3s ease-in-out background, border-color;
+
+    &:hover {
+        background-color: var(--color-2);
+    }
+    &:focus,&.selected {
+        border: 1px solid var(--color-accent);
+        outline: 2px solid var(--color-accent-alpha);
+    }
+    &.selected {
+        background-color: var(--color-accent);
+        color: var(--color-1);
+    }
+}

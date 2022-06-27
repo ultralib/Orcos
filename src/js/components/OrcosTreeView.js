@@ -18,13 +18,39 @@ export const OrcosTreeView = class extends HTMLElement {
 
         // Text element
         if(Utils.textualTags.includes(el.tagName)) {
+            nodeEl.setAttribute('is-parent', 'false')
             nodeEl.setAttribute('is-addable', 'false')
-            nodeEl.setAttribute('text', el.getAttribute('arcos-name') || el.innerText)
+            nodeEl.setAttribute('text', el.getAttribute('orcos-name') || el.innerText)
         }
         // Block element
         else {
-            nodeEl.setAttribute('is-addable', 'true')
-            nodeEl.setAttribute('text', el.getAttribute('arcos-name') || el.tagName)
+            if(Utils.parentTags.includes(el.tagName) || el.tagName === 'ORCOS-ROOT-COMPONENT') {
+                nodeEl.setAttribute('is-parent', 'true')
+                nodeEl.setAttribute('is-addable', 'true')
+            }
+            nodeEl.setAttribute('text', el.getAttribute('orcos-name') || el.tagName)
+        }
+
+        // Icon
+        switch(el.tagName) {
+            case 'P':
+            case 'H1':
+            case 'H2':
+            case 'H3':
+            case 'H4':
+            case 'H5':
+            case 'H6':
+                nodeEl.setAttribute('icon', 'text')
+                break
+            case 'A':
+                nodeEl.setAttribute('icon', 'link')
+                break
+            case 'UL':
+                nodeEl.setAttribute('icon', 'list')
+                break
+            case 'IMG':
+                nodeEl.setAttribute('icon', 'image')
+                break
         }
 
         // Link
@@ -36,11 +62,13 @@ export const OrcosTreeView = class extends HTMLElement {
         nodeEl.setAttribute('is-deletable', deletable)
         nodeEl.setAttribute('is-renameable', renameable)
 
-        // Childs
-        for(let child of el.children) {
-        let childNode = this.makeNode(child)
-        if(childNode)
-            nodeEl.appendChild(childNode)
+        // Childs (Non-textual element)
+        if(!Utils.textualTags.includes(el.tagName)) {
+            for(let child of el.children) {
+                let childNode = this.makeNode(child)
+                if(childNode)
+                    nodeEl.appendChild(childNode)
+            }
         }
 
         return nodeEl

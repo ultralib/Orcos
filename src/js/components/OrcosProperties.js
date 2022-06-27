@@ -37,12 +37,21 @@ export const OrcosProperties = class extends HTMLElement {
     __fieldToElement__(category, field, prop) {
         let inputEl = ''
 
-        let makeInput = (type, placeholder) => `
-            <input name="${field}" category="${category}" class="property-field" type="${type}" ${placeholder ? `placeholder="${placeholder}"` : ''}>
+        let makeInput = (type, placeholder, { min, max }) => `
+            <input
+                name="${field}"
+                category="${category}"
+                class="property-field orcos-input"
+                type="${type}"
+                ${placeholder ? `placeholder="${placeholder}"` : ''}
+                ${min ? `min="${min}"` : ''}
+                ${max ? `max="${max}"` : ''}
+            >
         `
         let makeSelect = (placeholder, options) => `
-            <select name="${field}" category="${category}" placeholder="${placeholder || 'Choose'}" class="property-field">
-                ${placeholder ? `<option disabled selected>${placeholder}</option>` : ''}
+            <select name="${field}" category="${category}" placeholder="${placeholder || 'Choose'}" class="property-field orcos-input">
+                ${placeholder ? `<option disabled>${placeholder}</option>` : ''}
+                <option selected value="">-</option>
                 ${options ? 
                     options.map(option => 
                         `<option value="${option?.value || option}">${option?.title || option}</option>`
@@ -59,12 +68,22 @@ export const OrcosProperties = class extends HTMLElement {
                     : ''}
             </div>
         `
+        let makeCustomInput = (tag, placeholder) => `
+            <${tag}
+                name="${field}"
+                category="${category}"
+                class="property-field"
+                placeholder="${placeholder || ''}"></${tag}>
+        `
 
-        if(prop.type === 'text' || prop.type === 'color' || prop.type === 'number') {
-            inputEl = makeInput(prop.type, prop.placeholder)
+        if(prop.type === 'text' || prop.type === 'color' || prop.type === 'number' || prop.type === 'range') {
+            inputEl = makeInput(prop.type, prop.placeholder, { ...prop })
         }
         else if(prop.type === 'select') {
             inputEl = makeSelect(prop.placeholder, prop.options)
+        }
+        else if(prop.type === 'units') {
+            inputEl = makeCustomInput('orcos-units-input', prop.placeholder)
         }
         // Font
         else if(prop.type === 'font') {
@@ -81,7 +100,7 @@ export const OrcosProperties = class extends HTMLElement {
 
         return `
             <div class="property">
-                <label for="${field}">${prop.title || 'Unknown'}</label>
+                <label for="${field}" class="orcos-label">${prop.title || 'Unknown'}</label>
                 ${inputEl}
             </div>
         `
@@ -93,6 +112,35 @@ export const OrcosProperties = class extends HTMLElement {
 
     get baseProperties() {
         return {
+            size: {
+                title: 'Size',
+                fields: {
+                    width: {
+                        title: 'Width',
+                        type: 'units',
+                        get: (el) => el.style['width'],
+                        set: (el, val) => el.style['width'] = val 
+                    },
+                    maxWidth: {
+                        title: 'Maximum Width',
+                        type: 'units',
+                        get: (el) => el.style['max-width'],
+                        set: (el, val) => el.style['max-width'] = val 
+                    },
+                    height: {
+                        title: 'Height',
+                        type: 'units',
+                        get: (el) => el.style['height'],
+                        set: (el, val) => el.style['height'] = val 
+                    },
+                    maxHeight: {
+                        title: 'Maximum Height',
+                        type: 'units',
+                        get: (el) => el.style['max-height'],
+                        set: (el, val) => el.style['max-height'] = val 
+                    }
+                }
+            },
             // TODO: Categories: Background, Content, Border; Props: Border, Alpha, Content Direction & Align
             background: {
                 title: 'Background',
@@ -100,12 +148,8 @@ export const OrcosProperties = class extends HTMLElement {
                     bgColor: {
                         title: 'Background Color',
                         type: 'color',
-                        get(el) {
-                            return el.style['background-color']
-                        },
-                        set(el, val) {
-                            el.style['background-color'] = val 
-                        }
+                        get: (el) => el.style['background-color'],
+                        set: (el, val) => el.style['background-color'] = val
                     },
                 }
             },
@@ -116,33 +160,21 @@ export const OrcosProperties = class extends HTMLElement {
                     color: {
                         title: 'Color',
                         type: 'color',
-                        get(el) {
-                            return el.style['color']
-                        },
-                        set(el, val) {
-                            el.style['color'] = val 
-                        }
+                        get: (el) => el.style['color'],
+                        set: (el, val) => el.style['color'] = val 
                     },
                     align: {
                         title: 'Align',
                         type: 'align',
-                        get(el) {
-                            return el.style['text-align']
-                        },
-                        set(el, val) {
-                            el.style['text-align'] = val
-                        }
+                        get: (el) => el.style['text-align'],
+                        set: (el, val) => el.style['text-align'] = val 
                     },
                     font: {
                         title: 'Font',
                         type: 'font',
                         placeholder: 'Choose font',
-                        get(el) {
-                            return el.style['font-family']
-                        },
-                        set(el, val) {
-                            el.style['font-family'] = val 
-                        }
+                        get: (el) => el.style['font-family'],
+                        set: (el, val) => el.style['font-family'] = val 
                     },
                     weight: {
                         title: 'Weight',
@@ -159,12 +191,8 @@ export const OrcosProperties = class extends HTMLElement {
                             { value: '800', title: 'Extra Bold' },
                             { value: '900', title: 'Black' }
                         ],
-                        get(el) {
-                            return el.style['font-weight']
-                        },
-                        set(el, val) {
-                            el.style['font-weight'] = val 
-                        }
+                        get: (el) => el.style['font-weight'],
+                        set: (el, val) => el.style['font-weight'] = val 
                     },
                     style: {
                         title: 'Style',
@@ -175,12 +203,21 @@ export const OrcosProperties = class extends HTMLElement {
                             { value: 'italic', title: 'Italic' },
                             { value: 'oblique', title: 'Oblique' },
                         ],
-                        get(el) {
-                            return el.style['font-style']
-                        },
-                        set(el, val) {
-                            el.style['font-style'] = val 
-                        }
+                        get: (el) => el.style['font-style'],
+                        set: (el, val) => el.style['font-style'] = val 
+                    },
+                    decoration: {
+                        title: 'Decoration',
+                        type: 'select',
+                        placeholder: 'Choose decoration',
+                        options: [
+                            { value: 'none', title: 'None' },
+                            { value: 'underline', title: 'Underline' },
+                            { value: 'overline', title: 'Overline' },
+                            { value: 'line-through', title: 'Strikethrough' },
+                        ],
+                        get: (el) => el.style['text-decoration'],
+                        set: (el, val) => el.style['text-decoration'] = val 
                     },
                 }
             },
@@ -228,7 +265,8 @@ export const OrcosProperties = class extends HTMLElement {
             })
             
             let inputElements = [
-                'INPUT', 'SELECT', 'TEXTAREA'
+                'INPUT', 'SELECT', 'TEXTAREA',
+                'ORCOS-UNITS-INPUT'
             ]
             // Apply values & watch changes
             this.querySelectorAll('.property-field').forEach(fieldEl => {
@@ -241,7 +279,9 @@ export const OrcosProperties = class extends HTMLElement {
                     fieldEl.value = currentValue
 
                     // Watch changes & apply to attached element
-                    fieldEl.addEventListener('input', (e) => fieldObject.set(this.attachedEl, e.target.value))
+                    fieldEl.addEventListener('input', (e) => {
+                        fieldObject.set(this.attachedEl, e.currentTarget.value)
+                    })
                 }
                 else if(fieldEl.classList.contains('buttons')) {
                     // Apply value from attached element
@@ -260,6 +300,8 @@ export const OrcosProperties = class extends HTMLElement {
                         })
                     })
                 }
+                else
+                    console.error('Unsupported type of input: ' + fieldEl.tagName)
             })
         }
         else
