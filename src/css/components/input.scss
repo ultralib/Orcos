@@ -39,20 +39,23 @@
     }
 }
 
-.orcos-input[type=range] {
-    -webkit-appearance: none;
+.orcos-input[type="range"] {
+    // -webkit-appearance: none;
 
     width: 100%;
 
     padding-left: 0;
     padding-right: 0;
 
+    outline: none;
+    border: none;
+
     background-color: transparent !important;
 }
-.orcos-input[type=range]:focus {
+.orcos-input[type="range"]:focus {
     outline: none;
 }
-.orcos-input[type=range]::-webkit-slider-runnable-track {
+.orcos-input[type="range"]::-webkit-slider-runnable-track {
     width: 100%;
     height: 6px;
     cursor: pointer;
@@ -61,7 +64,7 @@
     border-radius: 25px;
     border: 0px solid #000101;
 }
-.orcos-input[type=range]::-webkit-slider-thumb {
+.orcos-input[type="range"]::-webkit-slider-thumb {
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
     border: 0px solid #000000;
     height: 20px;
@@ -72,10 +75,10 @@
     -webkit-appearance: none;
     margin-top: -7px;
 }
-.orcos-input[type=range]:focus::-webkit-slider-runnable-track {
+.orcos-input[type="range"]:focus::-webkit-slider-runnable-track {
     background: var(--basic-2-color);
 }
-.orcos-input[type=range]::-moz-range-track {
+.orcos-input[type="range"]::-moz-range-track {
     width: 100%;
     height: 12.8px;
     cursor: pointer;
@@ -85,7 +88,7 @@
     border-radius: 25px;
     border: 0px solid #000101;
 }
-.orcos-input[type=range]::-moz-range-thumb {
+.orcos-input[type="range"]::-moz-range-thumb {
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
     border: 0px solid #000000;
     height: 20px;
@@ -94,7 +97,7 @@
     background: var(--color-gizmo);
     cursor: pointer;
   }
-.orcos-input[type=range]::-ms-track {
+.orcos-input[type="range"]::-ms-track {
     width: 100%;
     height: 12.8px;
     cursor: pointer;
@@ -104,19 +107,19 @@
     border-width: 39px 0;
     color: transparent;
 }
-.orcos-input[type=range]::-ms-fill-lower {
+.orcos-input[type="range"]::-ms-fill-lower {
     background: var(--basic-2-color);
     border: 0px solid #000101;
     border-radius: 50px;
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
 }
-.orcos-input[type=range]::-ms-fill-upper {
+.orcos-input[type="range"]::-ms-fill-upper {
     background: var(--basic-2-color);
     border: 0px solid #000101;
     border-radius: 50px;
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
 }
-.orcos-input[type=range]::-ms-thumb {
+.orcos-input[type="range"]::-ms-thumb {
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
     border: 0px solid #000000;
     height: 20px;
@@ -125,10 +128,10 @@
     background: var(--color-gizmo);
     cursor: pointer;
 }
-.orcos-input[type=range]:focus::-ms-fill-lower {
+.orcos-input[type="range"]:focus::-ms-fill-lower {
     background: var(--basic-2-color);
 }
-.orcos-input[type=range]:focus::-ms-fill-upper {
+.orcos-input[type="range"]:focus::-ms-fill-upper {
     background: var(--basic-2-color);
 }
 

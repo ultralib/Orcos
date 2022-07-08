@@ -1,11 +1,17 @@
+const textualTags = [
+    'P', 'SPAN', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6',
+    'SMALL', 'LABEL',
+    // Link
+    'A',
+    // List
+    'UL', 'LI'
+]
+
 export default {
-    textualTags: [
-        'P', 'SPAN', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6',
-        'SMALL', 'LABEL',
-        // Link
-        'A',
-        // List
-        'UL', 'LI'
+    textualTags: textualTags,
+    editableTags: [
+        ...textualTags,
+        'BUTTON'
     ],
     parentTags: [
         'DIV'

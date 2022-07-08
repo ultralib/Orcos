@@ -19,76 +19,87 @@ import './components/OrcosProperties.js'
 import './components/OrcosWindow.js'
 import './components/OrcosUnitsInput.js'
 
+// Other
+import Templates from '../js/components/Templates.js'
+import Utils from '../js/components/Utils.js'
+
 // Core
-const Project = new class {
-    get templates() {
-        return {
-            basic: {
-                baseStyle: `
-                    width: 100%;
-                    max-width: 250px;
-                    padding: 15px 20px;
-                    display:flex;
-                    flex-direction:column;
-                    border-radius:15px;
-                    background-color:white;
-                    font-family:'Inter','Roboto',sans-serif;
-                `,
-                inner: `
-                    <style component-style scoped>:host *,:host *::before,:host *::after{
-                        margin: 0;
-                        padding: 0;
-                        box-sizing: border-box;
-                        font-family: inherit;   
-                    }</style>
-                    <h1 style="margin-bottom:5px">Header</h1>
-                    <p>Some text</p>
-                `
-            }
-        }
+window.Project = new class {
+    getPairElements(pairObj) {
+        let _link = pairObj.link || (document.querySelector(`[orcos-link="${pairObj.linked.getAttribute('orcos-linked')}"]`))
+        let _linked = pairObj.linked || (document.querySelector(`[orcos-linked="${pairObj.link.getAttribute('orcos-link')}"]`))
+
+        return { link: _link, linked: _linked }
     }
 
-    get elements() {
-        const element = (tag, text, attrs) => {
-            let _el = document.createElement(tag)
-            // Text
-            if(text) _el.innerHTML = text
-            if(attrs) {
-                Object.keys(attrs).forEach(attrName => {
-                    _el.setAttribute(attrName, attrs[attrName])
-                })
+    selectElement(pair) {
+        let { link, linked } = this.getPairElements(pair)
+
+        // Unselect previous
+        this.treeElement.unselect()
+        this.rootElement.unselect()
+
+        // Make selected
+        link.setAttribute('selected', '')
+        linked.setAttribute('selected', '')
+
+        // Focus
+        //linked.focus()
+
+        // Attach to property editor
+        this.propsElement.attachElement(linked)
+    }
+
+    moveElement(direction, pair) {
+        let { link, linked } = this.getPairElements(pair)
+
+        if(link && linked) {
+            let moveDown = (el) => {
+                if(el.nextElementSibling) el.parentNode.insertBefore(el.nextElementSibling, el)
             }
-            return _el
-        }
+            let moveUp = (el) => {
+                if(el.previousElementSibling) el.parentNode.insertBefore(el, el.previousElementSibling)
+            }
 
-        return {
-            text: element('p', 'Text'),
-            link: element('a', 'Link', { href: '#' }),
-            image: element('img', null, { 'orcos-name': 'Image', src: '' }),
-            list: element('ul', '<li>One</li>'),
-            panel: element('div', null, { 'orcos-name': 'Panel', style: 'display:block;' }),
-            grid: element('div', null, { 'orcos-name': 'Grid', style: 'display:grid;' })
-
-            //TODO: list, panel, grid, flex, input, checkbox
+            // Down
+            if(direction === 'down') {
+                moveDown(linked)
+                moveDown(link)
+            }
+            // Up
+            else if(direction === 'up') {
+                moveUp(linked)
+                moveUp(link)
+            }
         }
+        else
+            console.error('Link or linked element was not found')
+    }
+
+    deleteElement(pair) {
+        let { link, linked } = this.getPairElements(pair)
+
+        link.remove()
+        linked.remove()
+    }
+
+    appendElement(linkId, newElement) {
+
     }
 
     constructor() {
         // Make root element
         this.rootElement = document.createElement('orcos-root-component')
         this.rootElement.setAttribute('orcos-name', 'root')
-        this.rootElement.useTemplate(this.templates['basic'])
+        this.rootElement.useTemplate(Templates.components['basic'])
         this.rootElement.addEventListener('nodeselect', (e) => {
-            // Focus
-            //e.detail.element.focus()
-            // Select node in tree
-            e.detail.linked.select()
-            // Attach to property editor
-            this.propsElement.attachElement(e.detail.element)
+            this.selectElement({ linked: e.detail.element })
         })
         this.rootElement.addEventListener('nodeedit', (e) => {
+            let { link, linked } = this.getPairElements({ linked: e.detail.element })
+
             // Rename node in tree
-            e.detail.linked.rename(e.detail.element.innerText)
+            link.rename(e.detail.element.innerText)
         })
         document.querySelector('main').appendChild(this.rootElement)
 
@@ -96,18 +107,20 @@ const Project = new class {
         this.treeElement = document.querySelector('orcos-tree')
         this.treeElement.from(this.rootElement)
         this.treeElement.addEventListener('nodeadd', (e) => {
+            let { link, linked } = this.getPairElements({ link: e.detail.node })
+
             this.addWindow.show()
 
             const listener = (clickE) => {
                 // Make element
-                let newElement = this.elements[clickE.currentTarget.getAttribute('data-template')]
+                let newElement = Templates.elements[clickE.currentTarget.getAttribute('data-template')]
                 
                 // Append to root
                 this.rootElement.processElement(newElement)
-                e.detail.linked.appendChild(newElement)
+                linked.appendChild(newElement)
 
                 // Append to tree
-                e.detail.node.querySelector('.nodes')?.appendChild(this.treeElement.makeNode(newElement))
+                link.querySelector('.nodes')?.appendChild(this.treeElement.makeNode(newElement))
             }
 
             // Templates of elements
@@ -116,18 +129,10 @@ const Project = new class {
             })
         })
         this.treeElement.addEventListener('nodedelete', (e) => {
-            // Remove linked
-            e.detail.linked.remove()
+            this.deleteElement({ link: e.detail.node })
         })
         this.treeElement.addEventListener('nodeselect', (e) => {
-            // Unselect previous
-            this.rootElement.unselect()
-            // Make selected
-            e.detail.linked.setAttribute('selected', '')
-            // Focus
-            //e.detail.linked.focus()
-            // Attach to property editor
-            this.propsElement.attachElement(e.detail.linked)
+            this.selectElement({ link: e.detail.node })
         })
 
         // Unselect elements when clicked on canvas

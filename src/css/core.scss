@@ -66,6 +66,8 @@ aside {
     width: 100%;
     max-width: 250px;
     background-color: var(--color-1);
+    overflow-x: visible;
+    overflow-y: scroll;
 
     z-index: 100;
 
@@ -112,6 +114,12 @@ orcos-tree {
 orcos-node {
     height: min-content;
 
+    &[selected] > .node-handle {
+        cursor: default;
+        border: 2px solid transparent;
+        background-color: var(--color-accent-alpha);
+    }
+
     .node-handle {
         padding: 5px 10px;
     
@@ -136,6 +144,7 @@ orcos-node {
 
         .node-title {
             width: 100%;
+            max-width: 160px;
 
             display: flex;
             flex-direction: row;
@@ -149,11 +158,6 @@ orcos-node {
 
         &:hover {
             border: 2px solid var(--color-accent) !important;
-        }
-        &[selected] {
-            cursor: default;
-            border: 2px solid transparent;
-            background-color: var(--color-accent-alpha);
         }
         &.visible {
             svg {
@@ -185,8 +189,6 @@ orcos-node {
 orcos-properties {
     display: flex;
     flex-direction: column;
-    overflow-x: visible;
-    overflow-y: scroll;
 
     .category {
         margin: 0 -15px;
@@ -258,11 +260,11 @@ orcos-root-component {
 
 orcos-window {
     position: fixed;
-    top: 8rem;
-    left: 8rem;
+    bottom: 2rem;
+    left: 2rem;
 
     width: 100%;
-    max-width: 32rem;
+    max-width: 26rem;
     height: max-content;
     min-height: 16rem;
 

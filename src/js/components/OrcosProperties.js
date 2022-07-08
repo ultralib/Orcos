@@ -163,6 +163,15 @@ export const OrcosProperties = class extends HTMLElement {
                         get: (el) => el.style['color'],
                         set: (el, val) => el.style['color'] = val 
                     },
+                    size: {
+                        title: 'Text size',
+                        type: 'range',
+                        placeholder: 'Choose text size',
+                        min: 2,
+                        max: 186,
+                        get: (el) => el.style['font-size'].replace('px', ''),
+                        set: (el, val) => el.style['font-size'] = val + 'px'
+                    },
                     align: {
                         title: 'Align',
                         type: 'align',
@@ -280,7 +289,7 @@ export const OrcosProperties = class extends HTMLElement {
 
                     // Watch changes & apply to attached element
                     fieldEl.addEventListener('input', (e) => {
-                        fieldObject.set(this.attachedEl, e.currentTarget.value)
+                        fieldObject.set(this.attachedEl, e.currentTarget.value.toString())
                     })
                 }
                 else if(fieldEl.classList.contains('buttons')) {

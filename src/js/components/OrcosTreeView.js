@@ -51,6 +51,22 @@ export const OrcosTreeView = class extends HTMLElement {
             case 'IMG':
                 nodeEl.setAttribute('icon', 'image')
                 break
+            case 'BUTTON':
+                nodeEl.setAttribute('icon', 'button')
+                break
+            case 'DIV':
+                if(el.style.display === 'grid')
+                    nodeEl.setAttribute('icon', 'grid')
+                else
+                    nodeEl.setAttribute('icon', 'panel')
+                break
+            case 'INPUT':
+                let inputType = el.getAttribute('type') || ''
+                if(inputType === 'checkbox')
+                    nodeEl.setAttribute('icon', 'checkbox')
+                else
+                    nodeEl.setAttribute('icon', 'input')
+                break
         }
 
         // Link

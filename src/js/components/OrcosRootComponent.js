@@ -19,8 +19,7 @@ export const OrcosRootComponent = class extends HTMLElement {
         let event = new CustomEvent(eventName, {
             detail: {
                 root: this,
-                element: element,
-                linked: document.querySelector(`[orcos-link="${element.getAttribute('orcos-linked')}"]`),
+                element: element
             }
         })
         // Dispatch to tree
@@ -34,11 +33,13 @@ export const OrcosRootComponent = class extends HTMLElement {
 
     processElement(el) {
         // If its text => make text editable
-        if(Utils.textualTags.includes(el.tagName)) {
+        if(Utils.editableTags.includes(el.tagName)) {
             el.setAttribute('contenteditable', '')
-            el.addEventListener('input', (e) => {
-                this.emit('nodeedit', e.target)
-            })
+            if(Utils.textualTags.includes(el.tagName)) {
+                el.addEventListener('input', (e) => {
+                    this.emit('nodeedit', e.target)
+                })
+            }
         }
 
         // Make selectable
@@ -63,6 +64,28 @@ export const OrcosRootComponent = class extends HTMLElement {
         shadow.innerHTML = `
             <slot></slot>
         `
+
+        // Hotkeys
+        document.addEventListener('keyup', (e) => {
+            let selectedEl = this.querySelector('[selected]')
+
+            // Selected not found || Selected is root
+            if(!selectedEl || selectedEl.tagName === 'ORCOS-ROOT-COMPONENT')
+                return
+
+            // Move element down (Opt/Alt + Down)
+            if (e.altKey && e.key === 'ArrowDown') {
+                window.Project.moveElement('down', { linked: selectedEl })
+            }
+            // Move element up (Opt/Alt + Up)
+            else if (e.altKey && e.key === 'ArrowUp') {
+                window.Project.moveElement('up', { linked: selectedEl })
+            }
+            // Delete element (Opt/Alt + Delete)
+            else if (e.altKey && e.key === 'Delete') {
+                window.Project.deleteElement({ linked: selectedEl })
+            }
+        }, false);
     }
 }
 
