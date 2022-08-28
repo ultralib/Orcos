@@ -24,6 +24,7 @@
     }
 
     &[type="color"] {
+        height: 38px;
         padding: 0;
 
         -webkit-appearance: none;
@@ -40,7 +41,7 @@
 }
 
 .orcos-input[type="range"] {
-    // -webkit-appearance: none;
+    -webkit-appearance: none;
 
     width: 100%;
 
@@ -60,7 +61,7 @@
     height: 6px;
     cursor: pointer;
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-    background: var(--basic-2-color);
+    background: var(--color-2);
     border-radius: 25px;
     border: 0px solid #000101;
 }
@@ -70,13 +71,13 @@
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background: var(--color-gizmo);
+    background: var(--color-accent);
     cursor: pointer;
     -webkit-appearance: none;
     margin-top: -7px;
 }
 .orcos-input[type="range"]:focus::-webkit-slider-runnable-track {
-    background: var(--basic-2-color);
+    background: var(--color-2);
 }
 .orcos-input[type="range"]::-moz-range-track {
     width: 100%;
@@ -84,7 +85,7 @@
     cursor: pointer;
     animate: 0.2s;
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-    background: var(--basic-2-color);
+    background: var(--color-2);
     border-radius: 25px;
     border: 0px solid #000101;
 }
@@ -94,7 +95,7 @@
     height: 20px;
     width: 39px;
     border-radius: 7px;
-    background: var(--color-gizmo);
+    background: var(--color-accent);
     cursor: pointer;
   }
 .orcos-input[type="range"]::-ms-track {
@@ -108,13 +109,13 @@
     color: transparent;
 }
 .orcos-input[type="range"]::-ms-fill-lower {
-    background: var(--basic-2-color);
+    background: var(--color-2);
     border: 0px solid #000101;
     border-radius: 50px;
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
 }
 .orcos-input[type="range"]::-ms-fill-upper {
-    background: var(--basic-2-color);
+    background: var(--color-2);
     border: 0px solid #000101;
     border-radius: 50px;
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
@@ -125,14 +126,14 @@
     height: 20px;
     width: 39px;
     border-radius: 7px;
-    background: var(--color-gizmo);
+    background: var(--color-accent);
     cursor: pointer;
 }
 .orcos-input[type="range"]:focus::-ms-fill-lower {
-    background: var(--basic-2-color);
+    background: var(--color-2);
 }
 .orcos-input[type="range"]:focus::-ms-fill-upper {
-    background: var(--basic-2-color);
+    background: var(--color-2);
 }
 
 orcos-units-input {
@@ -149,5 +150,95 @@ orcos-units-input {
         padding-left: 2px !important;
         padding-right: 2px !important;
         width: 30% !important;
+    }
+}
+
+orcos-spacing-input {
+    position: relative;
+
+    height: 100px;
+
+    .orcos-input {
+        width: 55px;
+        padding: 2px;
+
+        border-radius: 0;
+        border: none;
+
+        background: transparent;
+
+        text-align: center;
+
+        position: absolute;
+
+        -moz-appearance: textfield;
+
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        &:focus {
+            outline: none;
+            border: none;
+        }
+    }
+
+    [name="top"] {
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    [name="bottom"] {
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    [name="left"] {
+        left: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    [name="right"] {
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &::before {
+        content: '';
+
+        position: absolute;
+        left: 50px;
+        right: 50px;
+        top: 30px;
+        bottom: 30px;
+
+        border-radius: 10px;
+        border: 2px solid var(--color-4);
+    }
+
+    &[name="inner_spacing"] {
+        height: 120px;
+
+        [name="top"] {
+            top: 15px;
+        }
+        [name="bottom"] {
+            bottom: 15px;
+        }
+        [name="left"] {
+            left: 5px;
+        }
+        [name="right"] {
+            right: 5px;
+        }
+
+        &::before {
+            left: 10px;
+            right: 10px;
+            top: 10px;
+            bottom: 10px;
+        }
     }
 }

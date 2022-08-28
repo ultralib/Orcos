@@ -1,6 +1,6 @@
 const textualTags = [
     'P', 'SPAN', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6',
-    'SMALL', 'LABEL',
+    'SMALL', 'LABEL', 'PRE', 'CODE',
     // Link
     'A',
     // List
@@ -12,6 +12,11 @@ export default {
     editableTags: [
         ...textualTags,
         'BUTTON'
+    ],
+    tagsWithText: [
+        ...textualTags,
+        'BUTTON',
+        'INPUT',
     ],
     parentTags: [
         'DIV'
@@ -84,6 +89,17 @@ export default {
             'Verdana',
             'Zapfino'
         ]
+    },
+
+    cssRgbaToHex(rgba) {
+        if(rgba.startsWith('#'))
+            return rgba
+        else if(rgba === 'white')
+            return '#ffffff'
+        else if(rgba === 'black')
+            return '#000000'
+        else
+            return `#${rgba.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+\.{0,1}\d*))?\)$/).slice(1).map((n, i) => (i === 3 ? Math.round(parseFloat(n) * 255) : parseFloat(n)).toString(16).padStart(2, '0').replace('NaN', '')).join('')}`
     },
 
     generateRandom(length) {

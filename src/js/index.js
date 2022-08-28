@@ -5,7 +5,7 @@ import '../css/components/input.scss'
 import '../css/components/list.scss'
 
 // Polyfills
-import '@webcomponents/webcomponentsjs/webcomponents-bundle'
+//import '@webcomponents/webcomponentsjs/webcomponents-bundle'
 
 // Zooming
 //import createPanZoom from 'panzoom'
@@ -18,6 +18,7 @@ import './components/OrcosTreeNode.js'
 import './components/OrcosProperties.js'
 import './components/OrcosWindow.js'
 import './components/OrcosUnitsInput.js'
+import './components/OrcosSpacingInput.js'
 
 // Other
 import Templates from '../js/components/Templates.js'
@@ -35,19 +36,23 @@ window.Project = new class {
     selectElement(pair) {
         let { link, linked } = this.getPairElements(pair)
 
-        // Unselect previous
-        this.treeElement.unselect()
-        this.rootElement.unselect()
+        if(link && linked) {
+            // Unselect previous
+            this.treeElement.unselect()
+            this.rootElement.unselect()
 
-        // Make selected
-        link.setAttribute('selected', '')
-        linked.setAttribute('selected', '')
+            // Make selected
+            link.setAttribute('selected', '')
+            linked.setAttribute('selected', '')
 
-        // Focus
-        //linked.focus()
+            // Focus
+            //linked.focus()
 
-        // Attach to property editor
-        this.propsElement.attachElement(linked)
+            // Attach to property editor
+            this.propsElement.attachElement(linked)
+        }
+        else
+            console.error('Link or linked element was not found', pair)
     }
 
     moveElement(direction, pair) {
@@ -73,7 +78,7 @@ window.Project = new class {
             }
         }
         else
-            console.error('Link or linked element was not found')
+            console.error('Link or linked element was not found', pair)
     }
 
     deleteElement(pair) {
@@ -90,7 +95,7 @@ window.Project = new class {
     constructor() {
         // Make root element
         this.rootElement = document.createElement('orcos-root-component')
-        this.rootElement.setAttribute('orcos-name', 'root')
+        this.rootElement.setAttribute('orcos-name', 'Component')
         this.rootElement.useTemplate(Templates.components['basic'])
         this.rootElement.addEventListener('nodeselect', (e) => {
             this.selectElement({ linked: e.detail.element })
@@ -111,21 +116,26 @@ window.Project = new class {
 
             this.addWindow.show()
 
-            const listener = (clickE) => {
+            const onAddlistener = (clickE) => {
                 // Make element
-                let newElement = Templates.elements[clickE.currentTarget.getAttribute('data-template')]
+                let newElement = Templates.elements[clickE.currentTarget.getAttribute('data-template')].cloneNode(true)
+
+                console.log('[index]', 'Adding element')
                 
                 // Append to root
                 this.rootElement.processElement(newElement)
                 linked.appendChild(newElement)
 
+
                 // Append to tree
                 link.querySelector('.nodes')?.appendChild(this.treeElement.makeNode(newElement))
+
+                console.log('[index]', 'Added element')
             }
 
             // Templates of elements
             this.addWindow.querySelectorAll('[data-template]').forEach(templateEl => {
-                templateEl.onclick = listener
+                templateEl.onclick = onAddlistener
             })
         })
         this.treeElement.addEventListener('nodedelete', (e) => {

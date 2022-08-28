@@ -17,7 +17,7 @@ export const OrcosUnitsInput = class extends HTMLElement {
     set value(val) {
         if(val && val.length > 0) {
             let [ number, unit ] = val.match(/[\d\.]+|\D+/g)
-            this.numberInput.value = number
+            this.numberInput.value = number.replace('.', ',')
             this.unitInput.value = unit
         }
     }
