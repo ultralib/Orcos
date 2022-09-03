@@ -15,7 +15,6 @@ export const OrcosSpacingInput = class extends HTMLElement {
             return null
     }
     set value(val) {
-		console.log(val)
         if(val && val.length > 0) {
 			let values = val.split(' ')
 

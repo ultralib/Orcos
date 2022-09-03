@@ -22,7 +22,7 @@ export const OrcosProperties = class extends HTMLElement {
         })
 
         return `
-            <div class="category visible">
+            <div class="category">
                 <p class="category-title">
                     <span>${category.title}</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
@@ -188,11 +188,8 @@ export const OrcosProperties = class extends HTMLElement {
                 fields: {
                     radius: {
                         title: 'Roundness',
-                        type: 'range',
-                        min: 0,
-                        max: 150,
-                        get: (el) => el.style['border-radius'].replace('px', ''),
-                        set: (el, val) => el.style['border-radius'] = val + 'px'
+                        type: 'units',
+                        prop: 'border-radius'
                     },
                     style: {
                         title: 'Style',
@@ -309,6 +306,18 @@ export const OrcosProperties = class extends HTMLElement {
                         set(el, val) {
                             el.style['display'] = val
                         }
+                    },
+                    direction: {
+                        title: 'Direction',
+                        type: 'select',
+                        placeholder: 'Select direction',
+                        options: [
+                            { value: 'column', title: 'Column' },
+                            { value: 'column-reverse', title: 'Column (Reverse)' },
+                            { value: 'row', title: 'Row' },
+                            { value: 'row-reverse', title: 'Row (Reverse)' },
+                        ],
+                        prop: 'flex-direction'
                     },
                     maxHeight: {
                         title: 'Gap',

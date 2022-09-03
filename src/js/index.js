@@ -84,12 +84,30 @@ window.Project = new class {
     deleteElement(pair) {
         let { link, linked } = this.getPairElements(pair)
 
+        //TODO: check that is not root
+        
         link.remove()
         linked.remove()
     }
 
-    appendElement(linkId, newElement) {
+    duplicateElement(pair) {
+        let toDuplicatePair = this.getPairElements(pair)
+        let parentPair = this.getPairElements({ linked: toDuplicatePair.linked.parentNode})
+        
+        //TODO: check that is not root
 
+        console.log(toDuplicatePair, parentPair)
+    }
+
+    appendElement(parentPair, newElement) {
+        // Process element
+        this.rootElement.processElement(newElement)
+
+        // Append to parent in root
+        parentPair.linked.appendChild(newElement)
+
+        // Append to parent in tree
+        parentPair.link.querySelector('.nodes')?.appendChild(this.treeElement.makeNode(newElement))
     }
 
     constructor() {
@@ -108,11 +126,11 @@ window.Project = new class {
         })
         document.querySelector('main').appendChild(this.rootElement)
 
-        // Tree component
+        // Make DOM tree element
         this.treeElement = document.querySelector('orcos-tree')
         this.treeElement.from(this.rootElement)
         this.treeElement.addEventListener('nodeadd', (e) => {
-            let { link, linked } = this.getPairElements({ link: e.detail.node })
+            let parentPair = this.getPairElements({ link: e.detail.node })
 
             this.addWindow.show()
 
@@ -122,13 +140,8 @@ window.Project = new class {
 
                 console.log('[index]', 'Adding element')
                 
-                // Append to root
-                this.rootElement.processElement(newElement)
-                linked.appendChild(newElement)
-
-
-                // Append to tree
-                link.querySelector('.nodes')?.appendChild(this.treeElement.makeNode(newElement))
+                // Append to root & tree
+                this.appendElement(parentPair, newElement)
 
                 console.log('[index]', 'Added element')
             }
