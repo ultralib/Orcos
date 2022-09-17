@@ -14,6 +14,10 @@ let $serialize = (val) => {
     else if(val.$el) {
         return $serialize(val.$el)
     }
+    // Error
+    else if(val instanceof Error) {
+        return { name: val.name, message: val.message }
+    }
     else {
         return val
     }

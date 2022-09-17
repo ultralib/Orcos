@@ -22,6 +22,9 @@
         border: 1px solid var(--color-accent);
         outline: 2px solid var(--color-accent-alpha);
     }
+    &:invalid {
+        color: var(--color-5-alpha);
+    }
 
     &[type="color"] {
         height: 38px;

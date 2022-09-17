@@ -541,6 +541,8 @@ orcos-log {
 
         span {
             font-family: var(--font-code);
+            white-space: pre-line;
+            word-break: break-word;
         }
 
         &[data-severity="error"] {

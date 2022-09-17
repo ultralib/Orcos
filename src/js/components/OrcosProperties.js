@@ -53,8 +53,7 @@ export const OrcosProperties = class extends HTMLElement {
         `
         let makeSelect = (placeholder, options) => `
             <select name="${field}" category="${category}" placeholder="${placeholder || 'Choose'}" class="property-field orcos-input">
-                ${placeholder ? `<option disabled>${placeholder}</option>` : ''}
-                <option selected value="">-</option>
+                ${placeholder ? `<option disabled selected value="">${placeholder}</option>` : '<option disabled selected value="">Select option</option>' }
                 ${options ? 
                     options.map(option => 
                         `<option value="${option?.value || option}">${option?.title || option}</option>`
@@ -139,6 +138,12 @@ export const OrcosProperties = class extends HTMLElement {
 
                             el.setAttribute('id', val)
                         }
+                    },
+                    class: {
+                        title: 'Class',
+                        type: 'text',
+                        get: (el) => el.getAttribute('class'),
+                        set: (el, val) => el.setAttribute('class', val)
                     }
                 }
             },
@@ -339,7 +344,31 @@ export const OrcosProperties = class extends HTMLElement {
                         ],
                         prop: 'flex-direction'
                     },
-                    maxHeight: {
+                    justify: {
+                        title: 'Justify',
+                        type: 'select',
+                        placeholder: 'Select justify align',
+                        options: [
+                            { value: 'none', title: 'None' },
+                            { value: 'flex-start', title: 'Start' },
+                            { value: 'center', title: 'Center' },
+                            { value: 'flex-end', title: 'End' },
+                        ],
+                        prop: 'justify-content'
+                    },
+                    align: {
+                        title: 'Align',
+                        type: 'select',
+                        placeholder: 'Select align',
+                        options: [
+                            { value: 'none', title: 'None' },
+                            { value: 'flex-start', title: 'Start' },
+                            { value: 'center', title: 'Center' },
+                            { value: 'flex-end', title: 'End' },
+                        ],
+                        prop: 'align-items'
+                    },
+                    gap: {
                         title: 'Gap',
                         type: 'units',
                         prop: 'gap'
@@ -429,7 +458,7 @@ export const OrcosProperties = class extends HTMLElement {
                 // Basic input
                 if(inputElements.includes(fieldEl.tagName)) {
                     // Apply value from attached element to the input
-                    fieldEl.value = currentValue
+                    fieldEl.value = currentValue ?? ''
 
                     // Watch changes on the input
                     fieldEl.addEventListener('input', (e) => {

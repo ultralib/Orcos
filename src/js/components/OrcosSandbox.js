@@ -56,7 +56,7 @@ export const OrcosSandbox = class extends HTMLElement {
             <!-- Logic -->
             <script>${CoreJS}</script>
             <script>${CatchJS}</script>
-            <script>${js}</script>
+            <script>try{${js}}catch(e){console.log(e)}</script>
         `)
 
         // Handle sandbox messages
