@@ -31,6 +31,17 @@ export const OrcosRootComponent = class extends HTMLElement {
         this.innerHTML = template.inner || ''
     }
 
+    serialize() {
+        let copyEl = this.cloneNode(true)
+
+        for(let el of copyEl.querySelectorAll('[contenteditable], [orcos-linked]')) {
+            el.removeAttribute('contenteditable')
+            el.removeAttribute('orcos-linked')
+        }
+
+        return copyEl
+    }
+
     processElement(el) {
         // If its text => make text editable
         if(Utils.editableTags.includes(el.tagName)) {

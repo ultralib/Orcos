@@ -16,7 +16,10 @@ import './components/OrcosRootComponent.js'
 import './components/OrcosTreeView.js'
 import './components/OrcosTreeNode.js'
 import './components/OrcosProperties.js'
+import './components/OrcosCodeEditor.js'
 import './components/OrcosWindow.js'
+import './components/OrcosSandbox.js'
+import './components/OrcosLog.js'
 import './components/OrcosUnitsInput.js'
 import './components/OrcosSpacingInput.js'
 
@@ -49,7 +52,7 @@ window.Project = new class {
             //linked.focus()
 
             // Attach to property editor
-            this.propsElement.attachElement(linked)
+            this.propsElement.attachElement({ link, linked })
         }
         else
             console.error('Link or linked element was not found', pair)
@@ -111,10 +114,12 @@ window.Project = new class {
     }
 
     constructor() {
+        let template = Templates.components['basic']
+
         // Make root element
         this.rootElement = document.createElement('orcos-root-component')
         this.rootElement.setAttribute('orcos-name', 'Component')
-        this.rootElement.useTemplate(Templates.components['basic'])
+        this.rootElement.useTemplate(template)
         this.rootElement.addEventListener('nodeselect', (e) => {
             this.selectElement({ linked: e.detail.element })
         })
@@ -170,7 +175,30 @@ window.Project = new class {
         // PropertyEditor component
         this.propsElement = document.querySelector('orcos-properties')
 
+        // CodeEditor
+        this.editorElement = document.querySelector('orcos-code-editor')
+        this.editorElement.code = template.baseLogic
+
         // Add element window
         this.addWindow = document.querySelector('orcos-window#add-window')
+
+        // Add sandbox
+        this.sandboxWindow = document.querySelector('orcos-sandbox')
+
+        // Add functionality to nav buttons
+        document.querySelector('#run-button').onclick = (() => {
+            let root = this.rootElement.serialize()
+            this.sandboxWindow.run({
+                name: 'test',
+                root: root,
+                js: this.editorElement.code
+            })
+        })
+        document.querySelector('#plugins-button').onclick = (
+            () => console.error('Not supported yet')
+        )
+        document.querySelector('#export-button').onclick = (
+            () => console.error('Not supported yet')
+        )
     }
 }

@@ -28,6 +28,9 @@ hr {
 #app {
     display: flex;
     flex-direction: row;
+
+    height: 100%;
+    max-height: calc(100vh - 50px);
 }
 
 nav {
@@ -74,14 +77,11 @@ nav {
 main {
     width: 100%;
     height: 100%;
-    padding: 1rem;
 
     flex: 0 1 0;
     flex-grow: 1;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column-reverse;
 
     overflow: scroll;
 
@@ -113,6 +113,18 @@ aside {
         flex: 0 0 1;
 
         border-left: var(--border-width) solid var(--color-3);
+    }
+    &.side-bottom {
+        max-width: none;
+        height: 100%;
+        max-height: 300px;
+
+        margin: 0;
+
+        padding: 0;
+        padding-top: 1rem;
+
+        border-top: var(--border-width) solid var(--color-3);
     }
 
     .title {
@@ -285,6 +297,8 @@ orcos-properties {
 }
 
 orcos-root-component {
+    margin: auto;
+
     position: relative;
 
     [contenteditable] {
@@ -378,7 +392,164 @@ orcos-window {
     .window-body {
         padding: 14px 12px;
 
+        overflow-y: scroll;
+
         display: flex;
         flex-direction: column;
+    }
+}
+
+orcos-sandbox {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+
+    background-color: var(--color-1);
+
+    display: none;
+    &[visible="true"] {
+        display: flex;
+    }
+
+    .sandbox-header {
+        width: auto;
+
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        right: 1rem;
+
+        padding: 6px 12px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .sandbox-title {
+            user-select: none;
+
+            font-size: 18px;
+
+            color: var(--color-5-alpha);
+        }
+        .sandbox-close {
+            cursor: pointer;
+        }
+    }
+    .sandbox-container {
+        width: 100%;
+        max-width: 26rem;
+        height: max-content;
+        min-height: 16rem;
+
+        /*
+        background-color: var(--color-1);
+        border-radius: var(--border-radius);
+        border: 1px solid var(--color-3);
+        box-shadow: var(--shadow-basic);
+        */
+
+        .sandbox-body {
+            padding: 14px 12px;
+    
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    orcos-window {
+        max-width: 40rem;
+
+        &#sandbox-component-window {
+            width: 40rem;
+            height: 75vh;
+
+            top: 50%;
+            left: 50px;
+            right: auto;
+            transform: translateY(-50%);
+
+            z-index: 1050;
+
+            iframe {
+                width: 100%;
+                height: 100%;
+
+                border: none;
+                outline: none;
+            }
+        }
+        &#sandbox-log-window {
+            width: 30rem;
+            height: 30rem;
+
+            top: 50%;
+            left: auto;
+            right: 50px;
+            transform: translateY(-50%);
+        }
+
+        .window-header {
+            background-color: var(--color-1);
+        }
+        .window-body {
+            height: 100%;
+
+            background-color: var(--color-2);
+        }
+    }
+}
+
+orcos-code-editor, orcos-code-editor #code-editor-root {
+    width: 100%;
+    height: 100%;
+}
+orcos-code-editor * {
+    font-family: var(--font-code) !important;
+}
+
+orcos-log {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    .log-message {
+        width: 100%;
+        height: max-content;
+
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        padding: 6px 8px;
+
+        border: 1px solid var(--color-4);
+        border-radius: 6px;
+
+        background-color: var(--color-1);
+
+        span {
+            font-family: var(--font-code);
+        }
+
+        &[data-severity="error"] {
+            border: 1px solid #d88686;
+            background-color: #f69f9f;
+        }
+        &[data-severity="warning"] {
+            border: 1px solid #e1cb71;
+            background-color: #f6e59f;
+        }
     }
 }

@@ -16,11 +16,18 @@ export const OrcosTreeView = class extends HTMLElement {
 
         let nodeEl = document.createElement('orcos-node')
 
+        // From ID
+        let name = (el.hasAttribute('id') ? '#' + el.getAttribute('id') : null)
+            // From name
+            ?? el.getAttribute('orcos-name')
+            // From text/tag
+            ?? (Utils.textualTags.includes(el.tagName) ? el.innerText : el.tagName)
+
         // Text element
         if(Utils.textualTags.includes(el.tagName)) {
             nodeEl.setAttribute('is-parent', 'false')
             nodeEl.setAttribute('is-addable', 'false')
-            nodeEl.setAttribute('text', el.getAttribute('orcos-name') || el.innerText)
+            nodeEl.setAttribute('text', name)
         }
         // Block element
         else {
@@ -28,7 +35,7 @@ export const OrcosTreeView = class extends HTMLElement {
                 nodeEl.setAttribute('is-parent', 'true')
                 nodeEl.setAttribute('is-addable', 'true')
             }
-            nodeEl.setAttribute('text', el.getAttribute('orcos-name') || el.tagName)
+            nodeEl.setAttribute('text', name)
         }
 
         // Icon

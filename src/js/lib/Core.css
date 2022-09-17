@@ -1,0 +1,55 @@
+/* Core */
+:host *,:host *::before,:host *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;   
+}
+/* Panel, Grid */
+[orcos-type="panel"],[orcos-type="grid"] {
+    grid-gap: 15px;
+    gap: 15px;
+}
+/* Button */
+button {
+    display: block;
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+}
+/* Field */
+input,textarea,select {
+    padding: 0.8rem 1.2rem;
+    background-color: #EFEFEF;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+}
+/* Link */
+a {
+    margin-bottom: 5px;
+    color: #0079ff;
+    text-decoration-color: #add2fc;
+    text-underline-offset: 3px;
+}
+/* Image */
+img {
+    width: 50px;
+    height: 50px;
+    background-color: #EFEFEF;
+
+    border-radius: 12px;
+}
+/* Checkbox text */
+label > input + span {
+    margin-left: 5px;
+    font-size: 1rem;
+}
+/* List */
+ul {
+    padding-left: 20px;
+}

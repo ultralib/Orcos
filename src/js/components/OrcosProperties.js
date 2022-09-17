@@ -9,8 +9,11 @@ export const OrcosProperties = class extends HTMLElement {
         this.__render__()
     }
 
-    attachElement(el) {
-        this.attachedEl = el
+    attachElement(pair) {
+        let { link, linked } = pair ?? { link: undefined, linked: undefined }
+
+        this.attachedNode = link
+        this.attachedEl = linked
         this.__render__()
     }
 
@@ -120,8 +123,25 @@ export const OrcosProperties = class extends HTMLElement {
          * }
          */
 
-
         return {
+            el: {
+                title: 'Element',
+                for: 'any',
+                fields: {
+                    id: {
+                        title: 'ID',
+                        type: 'text',
+                        get: (el) => el.getAttribute('id'),
+                        set: (el, val) => {
+                            if(this.attachedNode.getAttribute('text').startsWith('#')) {
+                                this.attachedNode.rename('#' + val)
+                            }
+
+                            el.setAttribute('id', val)
+                        }
+                    }
+                }
+            },
             // Size
             size: {
                 title: 'Size',
