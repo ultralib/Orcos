@@ -34,9 +34,10 @@ export const OrcosRootComponent = class extends HTMLElement {
     serialize() {
         let copyEl = this.cloneNode(true)
 
-        for(let el of copyEl.querySelectorAll('[contenteditable], [orcos-linked]')) {
+        for(let el of copyEl.querySelectorAll('[contenteditable], [orcos-linked], [disabled]')) {
             el.removeAttribute('contenteditable')
             el.removeAttribute('orcos-linked')
+            el.removeAttribute('disabled')
         }
 
         return copyEl

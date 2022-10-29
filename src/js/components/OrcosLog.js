@@ -7,7 +7,7 @@ export const OrcosLog = class extends HTMLElement {
         this.innerHTML += `
             <div class="log-message" data-severity="${severity}">
                 ${args.map(arg => 
-                    `<span>${JSON.stringify(arg)}</span>`
+                    `<span>${JSON.stringify(arg, null, '  ')}</span>`
                 ).join('')}
             </div>
         `

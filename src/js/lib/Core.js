@@ -1,6 +1,6 @@
 window.$deps = {}
 
-// Creating data
+// Creating reactive data
 window.ref = function(value, type = null) {
     return new Proxy({
         is: 'reference',
@@ -14,6 +14,9 @@ window.ref = function(value, type = null) {
             // Add to dependencies
             this.dependencies.push(dep)
         },
+        removeDependencies() {
+            this.dependencies = []
+        },
         // Value
         value: value,
         type: type
@@ -24,7 +27,10 @@ window.ref = function(value, type = null) {
         set(target, prop, value) {
             // Update value
             if(prop === 'value') {
-                if(target.type != null) {}
+                // Validate type
+                if(target.type != null) {
+
+                }
 
                 // Set new value
                 target[prop] = value
@@ -43,6 +49,8 @@ window.ref = function(value, type = null) {
         ownKeys: () => ['addDependency', 'value', 'type']
     })
 }
+
+// Accessing elements
 window.el = function(selector) {
     if(selector == null) {
         selector = 'orcos-com'
@@ -55,12 +63,39 @@ window.el = function(selector) {
         return
     }
 
-    return new Proxy({ $el: element }, {
+    let base = {
+        $el: element,
+
+        bind(ref) {
+            // Check ref
+            if(ref?.is !== 'reference') {
+                throw new Error('Failed to bind: value was not reference')
+            }
+
+            // Assign initial value
+            this.$el.value = ref.value
+
+            // Bind on element change
+            this.$el.addEventListener('change', (e) => {
+                if(e.target.value) {
+                    ref.value = e.target.value
+                }
+            })
+
+            // Bind on ref change
+            ref.addDependency((val) => {
+                this.$el.value = val
+            })
+        }
+    }
+    return new Proxy(base, {
         get(target, prop) {
+            // Get from element
             if(prop in target.$el)
                 return target.$el[prop]
-            else if(prop === '$el')
-                return target.$el
+            // Get from root
+            else if(prop in target)
+                return target[prop]
             else
                 return undefined
         },

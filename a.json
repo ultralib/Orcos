@@ -1,0 +1,2838 @@
+{
+    "data": {
+        "meta": [
+            {
+                "type": "charset",
+                "raw": "UTF-8"
+            },
+            {
+                "type": "adaptivity",
+                "adaptive": true,
+                "raw": "width=device-width, initial-scale=1"
+            },
+            {
+                "type": "google-site-verification",
+                "raw": "guMau7oNvBifqUhZGuuGVtiGD0HkKe8v6uwYpvj2ZIg"
+            },
+            {
+                "type": "title",
+                "raw": "Нож туристический Elite Shop 60753152 купить за 700 ₽ в интернет-магазине Wildberries"
+            },
+            {
+                "type": "description",
+                "raw": "Нож туристический Elite Shop 60753152 купить за 700&nbsp;₽ в интернет-магазине Wildberries. Бесплатная доставка и постоянные скидки!"
+            }
+        ],
+        "price": [
+            {
+                "text": "700 ₽",
+                "raw": 700
+            },
+            {
+                "text": "2 500 ₽",
+                "raw": 2500
+            }
+        ],
+        "price_old": [
+            {
+                "text": "2 500 ₽",
+                "raw": 2500
+            }
+        ],
+        "discount": [],
+        "product": [
+            {
+                "image": [
+                    {
+                        "src": "//basket-04.wb.ru/vol607/part60753/60753152/images/tm/1.jpg",
+                        "alt": "Нож туристический",
+                        "width": "48",
+                        "height": "64"
+                    }
+                ],
+                "title": [],
+                "text": [
+                    {
+                        "tag": "B",
+                        "raw": "Elite Shop",
+                        "qualified": "word"
+                    }
+                ],
+                "link": [
+                    {
+                        "href": "/catalog/60753152/feedbacks?size=108127629",
+                        "raw": "191отзыв"
+                    },
+                    {
+                        "href": "/lk/basket",
+                        "raw": "В корзину"
+                    }
+                ],
+                "price": {
+                    "text": "700 ₽",
+                    "raw": 700
+                },
+                "price_old": null,
+                "discount": null,
+                "keyword": [],
+                "$data": {
+                    "accuracy": 0.49999999999999994,
+                    "href": "/catalog/60753152/feedbacks?size=108127629"
+                }
+            },
+            {
+                "image": [
+                    {
+                        "src": "//basket-04.wb.ru/vol607/part60753/60753152/images/c246x328/1.jpg",
+                        "alt": " Вид 1.",
+                        "width": null,
+                        "height": null
+                    },
+                    {
+                        "src": "//basket-04.wb.ru/vol607/part60753/60753152/images/c246x328/2.jpg",
+                        "alt": " Вид 2.",
+                        "width": null,
+                        "height": null
+                    },
+                    {
+                        "src": "//basket-04.wb.ru/vol607/part60753/60753152/images/c246x328/3.jpg",
+                        "alt": " Вид 3.",
+                        "width": null,
+                        "height": null
+                    },
+                    {
+                        "src": "//basket-04.wb.ru/vol607/part60753/60753152/images/c246x328/4.jpg",
+                        "alt": " Вид 4.",
+                        "width": null,
+                        "height": null
+                    },
+                    {
+                        "src": "//basket-04.wb.ru/vol607/part60753/60753152/images/c246x328/5.jpg",
+                        "alt": " Вид 5.",
+                        "width": null,
+                        "height": null
+                    },
+                    {
+                        "src": "//basket-04.wb.ru/vol607/part60753/60753152/images/c246x328/6.jpg",
+                        "alt": " Вид 6.",
+                        "width": null,
+                        "height": null
+                    },
+                    {
+                        "src": "//basket-04.wb.ru/vol607/part60753/60753152/images/c246x328/7.jpg",
+                        "alt": " Вид 7.",
+                        "width": null,
+                        "height": null
+                    },
+                    {
+                        "src": "//basket-04.wb.ru/vol607/part60753/60753152/images/big/1.jpg",
+                        "width": "900",
+                        "height": "1200"
+                    },
+                    {
+                        "src": "//basket-04.wb.ru/vol607/part60753/60753152/images/tm/1.jpg",
+                        "alt": "серебристый",
+                        "width": "72",
+                        "height": "96"
+                    },
+                    {
+                        "src": "//basket-04.wb.ru/vol635/part63562/63562495/images/tm/1.jpg",
+                        "alt": "серый",
+                        "width": "72",
+                        "height": "96"
+                    },
+                    {
+                        "src": "//basket-04.wb.ru/vol663/part66373/66373585/images/tm/1.jpg",
+                        "alt": "серый",
+                        "width": "72",
+                        "height": "96"
+                    },
+                    {
+                        "src": "//images.wbstatic.net/brands/small/657252.jpg",
+                        "alt": "Elite Shop",
+                        "width": "96",
+                        "height": "40"
+                    }
+                ],
+                "title": [
+                    {
+                        "tag": "H1",
+                        "raw": "Нож туристический"
+                    },
+                    {
+                        "tag": "H2",
+                        "raw": "О товаре"
+                    },
+                    {
+                        "tag": "H3",
+                        "raw": "Описание"
+                    },
+                    {
+                        "tag": "H3",
+                        "raw": "Состав"
+                    },
+                    {
+                        "tag": "H3",
+                        "raw": "Причина уценки"
+                    }
+                ],
+                "text": [
+                    {
+                        "tag": "P",
+                        "raw": "Экспресс-доставка",
+                        "qualified": "unknown"
+                    },
+                    {
+                        "tag": "P",
+                        "raw": "Доставка из-за рубежа",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "P",
+                        "raw": "Товары для взрослых",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "P",
+                        "raw": "Товары для взрослых",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "P",
+                        "raw": "Товары для взрослых",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "P",
+                        "raw": "Товары для взрослых",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "P",
+                        "raw": "Товары для взрослых",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "P",
+                        "raw": "Товары для взрослых",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "P",
+                        "raw": "Товары для взрослых",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Похожие",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "P",
+                        "raw": "видео отсутствует",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "P",
+                        "raw": "Экспресс-доставка",
+                        "qualified": "unknown"
+                    },
+                    {
+                        "tag": "P",
+                        "raw": "Доставка из-за рубежа",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "P",
+                        "raw": "Товары для взрослых",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "P",
+                        "raw": "Электронная книга будет доступна для скачивания в Личном кабинете сразу после покупки",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Состав:",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "серебристый",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Вес товара с упаковкой (г)",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "350 г",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Ширина предмета",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "5.5 см",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Длина предмета",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "30.5 см",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Длина клинка (см)",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "16.5 см",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Ширина упаковки",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "6.5 см",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Elite Shop",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "ХИТ ПРОДАЖ",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "5",
+                        "qualified": "unknown"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "191отзыв",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Артикул:",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Арт:",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "60753152",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "менее 5 раз",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "P",
+                        "raw": "Нож ,,Охотник,, . Ловчий - большой нож, который с одинаковым успехом послужит и охотнику, и путешественнику, а также туристу. Широкий клинок сделан из нержавеющей стали 65*13, обладает хорошо выраженным острием и высокими спусками. В нем гармонично сочетается режущие и колющие свойства, а также возможность рубить. Рукоять пластико-деревянная, усилена гардой-обоймицей из полированной стали. Нож комплектуется удобным чехлом для хранения и ношения!",
+                        "qualified": "bigtext"
+                    },
+                    {
+                        "tag": "P",
+                        "raw": "Описания пока нет. Возможно, оно появится тут позже",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Вес товара с упаковкой (г)",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "350 г",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Ширина предмета",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "5.5 см",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Длина предмета",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "30.5 см",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Длина клинка (см)",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "16.5 см",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Ширина упаковки",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "6.5 см",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Высота упаковки",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "33.5 см",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Глубина упаковки",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "2.5 см",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Материал ручки",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Пластик дерево",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Страна производства",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Китай",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Спортивное назначение",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "туризм",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Тип стали лезвий",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "65Х13",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Комплектация",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "нож; Чехол тканевый - 1 шт",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Материал лезвий",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Сталь 65Х13",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "P",
+                        "raw": "У товара пока нет характеристик.",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "P",
+                        "raw": "Возможно, они появятся тут позже",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Сообщить о неточности",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "P",
+                        "raw": "Электронная книга будет доступна для скачивания в Личном кабинете сразу после покупки",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Elite Shop",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "ножи туристические",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Elite Shop",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "ножи туристические",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "P",
+                        "raw": "Wildberries не продаёт и не доставляет алкогольную продукцию. Вы можете забронировать интересующий товар и забрать его в магазинах партнёров.",
+                        "qualified": "text"
+                    },
+                    {
+                        "tag": "P",
+                        "raw": "Черезмерное употребление алкоголя вредит здоровью",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Добавить в корзину",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "В корзину",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "0",
+                        "qualified": "unknown"
+                    },
+                    {
+                        "tag": "P",
+                        "raw": "Добавлено в избранное",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "Добавить в корзину",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "В корзину",
+                        "qualified": "word"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "0",
+                        "qualified": "unknown"
+                    },
+                    {
+                        "tag": "P",
+                        "raw": "Добавлено в избранное",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "P",
+                        "raw": "Электронная книга будет доступна для скачивания в Личном кабинете сразу после покупки",
+                        "qualified": "sentence"
+                    },
+                    {
+                        "tag": "SPAN",
+                        "raw": "У других продавцов от",
+                        "qualified": "sentence"
+                    }
+                ],
+                "link": [
+                    {
+                        "href": "/recommendation/catalog?type=visuallysimilar&forproduct=60753152&excludeNms=true",
+                        "raw": "Похожие"
+                    },
+                    {
+                        "href": "/recommendation/catalog?type=visuallysimilar&forproduct=60753152&excludeNms=true",
+                        "raw": "Похожие"
+                    },
+                    {
+                        "href": "#options",
+                        "raw": "Все характеристики"
+                    },
+                    {
+                        "raw": "Elite Shop"
+                    },
+                    {
+                        "href": "https://www.wildberries.ru/catalog/60753152/detail.aspx?targetUrl=SN#Comments",
+                        "raw": "5191отзыв"
+                    },
+                    {
+                        "raw": "Все товары Elite Shop"
+                    },
+                    {
+                        "href": "/brands/elite-shop/nozhi-turisticheskie",
+                        "raw": "Все ножи туристическиеElite Shop"
+                    },
+                    {
+                        "raw": "Все ножи туристические в категории"
+                    },
+                    {
+                        "href": "/lk/basket",
+                        "raw": "Перейти в корзину"
+                    },
+                    {
+                        "href": "/lk/booking",
+                        "raw": "В корзине 0 шт."
+                    },
+                    {
+                        "href": "/lk/basket",
+                        "raw": "Перейти в корзину"
+                    },
+                    {
+                        "href": "/lk/booking",
+                        "raw": "В корзине 0 шт."
+                    },
+                    {
+                        "href": "#full-list",
+                        "raw": "У других продавцов от"
+                    },
+                    {
+                        "raw": ""
+                    }
+                ],
+                "price": {
+                    "text": "700 ₽",
+                    "raw": 700
+                },
+                "price_old": {
+                    "text": "2 500 ₽",
+                    "raw": 2500
+                },
+                "discount": null,
+                "keyword": [],
+                "$data": {
+                    "accuracy": 0.49999999999999994,
+                    "href": "/recommendation/catalog?type=visuallysimilar&forproduct=60753152&excludeNms=true"
+                }
+            }
+        ],
+        "email": [],
+        "phone": [],
+        "url_media": [],
+        "url_messenger": [
+            {
+                "href": "https://t.me/wbdevs",
+                "href_domain": "t.me",
+                "type": "telegram",
+                "raw": "WB.Tech"
+            },
+            {
+                "href": "https://t.me/wildberriesru_official",
+                "href_domain": "t.me",
+                "type": "telegram",
+                "raw": "Телеграм"
+            }
+        ],
+        "url_marketplace": [
+            {
+                "href": "https://www.wildberries.ru/services/trudoustroystvo",
+                "href_domain": "wildberries.ru",
+                "type": "wildberries",
+                "raw": "Работа в Wildberries"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/zhenshchinam",
+                "href_domain": "wildberries.ru",
+                "type": "wildberries",
+                "raw": "Женщинам"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/obuv",
+                "href_domain": "wildberries.ru",
+                "type": "wildberries",
+                "raw": "Обувь"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/detyam",
+                "href_domain": "wildberries.ru",
+                "type": "wildberries",
+                "raw": "Детям"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/muzhchinam",
+                "href_domain": "wildberries.ru",
+                "type": "wildberries",
+                "raw": "Мужчинам"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/krasota",
+                "href_domain": "wildberries.ru",
+                "type": "wildberries",
+                "raw": "Красота"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/aksessuary",
+                "href_domain": "wildberries.ru",
+                "type": "wildberries",
+                "raw": "Аксессуары"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/elektronika",
+                "href_domain": "wildberries.ru",
+                "type": "wildberries",
+                "raw": "Электроника"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/igrushki",
+                "href_domain": "wildberries.ru",
+                "type": "wildberries",
+                "raw": "Игрушки"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/dom/mebel",
+                "href_domain": "wildberries.ru",
+                "type": "wildberries",
+                "raw": "Мебель"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/pitanie",
+                "href_domain": "wildberries.ru",
+                "type": "wildberries",
+                "raw": "Продукты"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/sport",
+                "href_domain": "wildberries.ru",
+                "type": "wildberries",
+                "raw": "Спорт"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/aksessuary/avtotovary",
+                "href_domain": "wildberries.ru",
+                "type": "wildberries",
+                "raw": "Автотовары"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/detyam/shkola",
+                "href_domain": "wildberries.ru",
+                "type": "wildberries",
+                "raw": "Школа"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/knigi",
+                "href_domain": "wildberries.ru",
+                "type": "wildberries",
+                "raw": "Книги"
+            },
+            {
+                "href": "https://www.wildberries.ru/promotions",
+                "href_domain": "wildberries.ru",
+                "type": "wildberries",
+                "raw": "Акции"
+            },
+            {
+                "href": "https://www.wildberries.ru/brandlist/all",
+                "href_domain": "wildberries.ru",
+                "type": "wildberries",
+                "raw": "Бренды"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/60753152/detail.aspx",
+                "href_domain": "wildberries.ru",
+                "type": "wildberries",
+                "raw": ""
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/63562495/detail.aspx",
+                "href_domain": "wildberries.ru",
+                "type": "wildberries",
+                "raw": ""
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/66373585/detail.aspx",
+                "href_domain": "wildberries.ru",
+                "type": "wildberries",
+                "raw": ""
+            }
+        ],
+        "keyword": [],
+        "title": [
+            {
+                "tag": "H1",
+                "raw": "Нож туристический"
+            },
+            {
+                "tag": "H2",
+                "raw": "О товаре"
+            },
+            {
+                "tag": "H3",
+                "raw": "Описание"
+            },
+            {
+                "tag": "H3",
+                "raw": "Состав"
+            },
+            {
+                "tag": "H3",
+                "raw": "Причина уценки"
+            },
+            {
+                "tag": "H2",
+                "raw": "Отзывы, вопросы и статьи"
+            },
+            {
+                "tag": "H3",
+                "raw": "Покупателям"
+            },
+            {
+                "tag": "H3",
+                "raw": "Партнерам"
+            },
+            {
+                "tag": "H3",
+                "raw": "Наши проекты"
+            },
+            {
+                "tag": "H3",
+                "raw": "Компания"
+            },
+            {
+                "tag": "H3",
+                "raw": "Мы в соцсетях"
+            },
+            {
+                "tag": "H3",
+                "raw": "Мобильные устройства"
+            },
+            {
+                "tag": "H2",
+                "raw": "Чат поддержки"
+            },
+            {
+                "tag": "H2",
+                "raw": "Подтвердите свой возраст"
+            }
+        ],
+        "text": [
+            {
+                "tag": "SPAN",
+                "raw": "Ru",
+                "qualified": "unknown"
+            },
+            {
+                "tag": "P",
+                "raw": "Выберите страну",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Россия",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "(Russia)",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "(Ru)",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Армения",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "(Armenia)",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "(Am)",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Беларусь",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "(Belarus)",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "(By)",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Израиль",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "(Israel)",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "(Il)",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Казахстан",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "(Kazakhstan)",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "(Kz)",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Киргизия",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "(Kyrgyzstan)",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "(Kg)",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Узбекистан",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "(Uzbekistan)",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "(Uz)",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Санкт-Петербург",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Сообщить о проблеме",
+                "qualified": "sentence"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "8 МБ.",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "JPG, JPEG, PNG, BMP, GIF.",
+                "qualified": "sentence"
+            },
+            {
+                "tag": "P",
+                "raw": "Загрузка файла",
+                "qualified": "word"
+            },
+            {
+                "tag": "B",
+                "raw": "Elite Shop",
+                "qualified": "word"
+            },
+            {
+                "tag": "P",
+                "raw": "Экспресс-доставка",
+                "qualified": "unknown"
+            },
+            {
+                "tag": "P",
+                "raw": "Доставка из-за рубежа",
+                "qualified": "sentence"
+            },
+            {
+                "tag": "P",
+                "raw": "Товары для взрослых",
+                "qualified": "sentence"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Похожие",
+                "qualified": "word"
+            },
+            {
+                "tag": "P",
+                "raw": "видео отсутствует",
+                "qualified": "sentence"
+            },
+            {
+                "tag": "P",
+                "raw": "Электронная книга будет доступна для скачивания в Личном кабинете сразу после покупки",
+                "qualified": "sentence"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Состав:",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "серебристый",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Вес товара с упаковкой (г)",
+                "qualified": "sentence"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "350 г",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Ширина предмета",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "5.5 см",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Длина предмета",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "30.5 см",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Длина клинка (см)",
+                "qualified": "sentence"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "16.5 см",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Ширина упаковки",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "6.5 см",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "ХИТ ПРОДАЖ",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "5",
+                "qualified": "unknown"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "191отзыв",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Артикул:",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Арт:",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "60753152",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "менее 5 раз",
+                "qualified": "word"
+            },
+            {
+                "tag": "P",
+                "raw": "Нож ,,Охотник,, . Ловчий - большой нож, который с одинаковым успехом послужит и охотнику, и путешественнику, а также туристу. Широкий клинок сделан из нержавеющей стали 65*13, обладает хорошо выраженным острием и высокими спусками. В нем гармонично сочетается режущие и колющие свойства, а также возможность рубить. Рукоять пластико-деревянная, усилена гардой-обоймицей из полированной стали. Нож комплектуется удобным чехлом для хранения и ношения!",
+                "qualified": "bigtext"
+            },
+            {
+                "tag": "P",
+                "raw": "Описания пока нет. Возможно, оно появится тут позже",
+                "qualified": "sentence"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Высота упаковки",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "33.5 см",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Глубина упаковки",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "2.5 см",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Материал ручки",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Пластик дерево",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Страна производства",
+                "qualified": "sentence"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Китай",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Спортивное назначение",
+                "qualified": "sentence"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "туризм",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Тип стали лезвий",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "65Х13",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Комплектация",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "нож; Чехол тканевый - 1 шт",
+                "qualified": "sentence"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Материал лезвий",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Сталь 65Х13",
+                "qualified": "word"
+            },
+            {
+                "tag": "P",
+                "raw": "У товара пока нет характеристик.",
+                "qualified": "sentence"
+            },
+            {
+                "tag": "P",
+                "raw": "Возможно, они появятся тут позже",
+                "qualified": "sentence"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Сообщить о неточности",
+                "qualified": "sentence"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "ножи туристические",
+                "qualified": "sentence"
+            },
+            {
+                "tag": "P",
+                "raw": "Wildberries не продаёт и не доставляет алкогольную продукцию. Вы можете забронировать интересующий товар и забрать его в магазинах партнёров.",
+                "qualified": "text"
+            },
+            {
+                "tag": "P",
+                "raw": "Черезмерное употребление алкоголя вредит здоровью",
+                "qualified": "sentence"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Добавить в корзину",
+                "qualified": "sentence"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "В корзину",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "0",
+                "qualified": "unknown"
+            },
+            {
+                "tag": "P",
+                "raw": "Добавлено в избранное",
+                "qualified": "sentence"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "У других продавцов от",
+                "qualified": "sentence"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "191",
+                "qualified": "word"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "2004-2022 © Wildberries",
+                "qualified": "sentence"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "— модный интернет-магазин одежды, обуви и аксессуаров. Все права защищены.",
+                "qualified": "sentence"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Доставка по всей России.",
+                "qualified": "sentence"
+            },
+            {
+                "tag": "SPAN",
+                "raw": "Лина",
+                "qualified": "word"
+            },
+            {
+                "tag": "P",
+                "raw": "Данный раздел предназначен только для посетителей, достигших возраста 18 лет!",
+                "qualified": "sentence"
+            }
+        ],
+        "image": [
+            {
+                "src": "//static.wbstatic.net/i/header/logo-v1.svg",
+                "alt": "Wildberries",
+                "width": "240",
+                "height": "64"
+            }
+        ],
+        "icon": [],
+        "button": [
+            {
+                "type": "button",
+                "raw": "Сообщить о проблеме"
+            },
+            {
+                "type": "button",
+                "raw": ""
+            },
+            {
+                "type": "button",
+                "raw": "Санкт-Петербург"
+            },
+            {
+                "type": "button",
+                "raw": "Поиск товара"
+            },
+            {
+                "type": "button",
+                "raw": "Очистить поиск"
+            },
+            {
+                "type": "button",
+                "raw": "Поиск по фото"
+            },
+            {
+                "type": "button",
+                "raw": "Закрыть меню"
+            },
+            {
+                "raw": "Назад"
+            },
+            {
+                "type": "button",
+                "raw": "В избранное"
+            },
+            {
+                "type": "button",
+                "raw": "Поделиться"
+            },
+            {
+                "type": "button",
+                "raw": "К предыдущей странице"
+            },
+            {
+                "type": "button",
+                "raw": "Предыдущий слайд"
+            },
+            {
+                "type": "button",
+                "raw": "Следующий слайд"
+            },
+            {
+                "type": "button",
+                "raw": "Развернуть описание"
+            },
+            {
+                "type": "button",
+                "raw": "Развернуть характеристики"
+            },
+            {
+                "type": "button",
+                "raw": "Сообщить о неточности"
+            },
+            {
+                "raw": "Купить сейчас"
+            },
+            {
+                "raw": "Добавить в корзинуВ корзину"
+            },
+            {
+                "raw": "Забронировать"
+            },
+            {
+                "raw": "-"
+            },
+            {
+                "raw": "+"
+            },
+            {
+                "type": "button",
+                "raw": "К началу страницы"
+            },
+            {
+                "type": "button",
+                "raw": "Отзывы 191"
+            },
+            {
+                "type": "button",
+                "raw": "Вопросы 0"
+            },
+            {
+                "type": "button",
+                "raw": "Статьи 0"
+            },
+            {
+                "type": "button",
+                "raw": "Видео 0"
+            },
+            {
+                "type": "button",
+                "raw": "Правила публикации"
+            },
+            {
+                "type": "button",
+                "raw": "Открыть"
+            },
+            {
+                "type": "button",
+                "raw": "Закрыть"
+            },
+            {
+                "type": "button",
+                "raw": "Да, мне есть 18 лет"
+            },
+            {
+                "type": "button",
+                "raw": "Нет"
+            }
+        ],
+        "link": [
+            {
+                "href": "/services/besplatnaya-dostavka?desktop=1",
+                "raw": "Бесплатная доставка"
+            },
+            {
+                "href": "https://vsemrabota.ru/appwb/",
+                "raw": "Трудоустройство"
+            },
+            {
+                "href": "https://seller.wildberries.ru/",
+                "raw": "Продавайте на Wildberries"
+            },
+            {
+                "href": "/",
+                "raw": ""
+            },
+            {
+                "href": "/services/besplatnaya-dostavka?desktop=1#terms-delivery",
+                "raw": "Адреса"
+            },
+            {
+                "href": "/security/login?returnUrl=https%3A%2F%2Fwww.wildberries.ru%2Fcatalog%2F60753152%2Fdetail.aspx%3FtargetUrl%3DSN",
+                "raw": "Войти"
+            },
+            {
+                "href": "/lk/basket",
+                "raw": "Корзина"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/dom-i-dacha",
+                "raw": "Дом"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/aksessuary/tovary-dlya-vzroslyh",
+                "raw": "Товары для взрослых"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/bytovaya-tehnika",
+                "raw": "Бытовая техника"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/tovary-dlya-zhivotnyh",
+                "raw": "Зоотовары"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/premium-store",
+                "raw": "Premium"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/yuvelirnye-ukrasheniya",
+                "raw": "Ювелирные изделия"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/dom-i-dacha/instrumenty",
+                "raw": "Для ремонта"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/produkty/alkogolnaya-produktsiya",
+                "raw": "Алкоголь"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/dachniy-sezon",
+                "raw": "Сад и дача"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/dom-i-dacha/zdorove",
+                "raw": "Здоровье"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/knigi-i-diski/kantstovary",
+                "raw": "Канцтовары"
+            },
+            {
+                "href": "https://digital.wildberries.ru/",
+                "raw": "Цифровые товары"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/bistraya-dostavka/food-city",
+                "raw": "Экспресс-доставка"
+            },
+            {
+                "href": "https://travel.wildberries.ru/",
+                "raw": "Авиабилеты"
+            },
+            {
+                "href": "https://www.wildberries.ru/video-reviews",
+                "raw": "Видеообзоры"
+            },
+            {
+                "href": "/lk",
+                "raw": "Главная"
+            },
+            {
+                "href": "/lk/favorites",
+                "raw": "Избранное"
+            },
+            {
+                "href": "/lk/favoritebrands",
+                "raw": "Любимые бренды"
+            },
+            {
+                "href": "/lk/myorders/delivery",
+                "raw": "Покупки"
+            },
+            {
+                "href": "/lk/myorders/delivery",
+                "raw": "Доставки"
+            },
+            {
+                "href": "/lk/receipts/get?count=10",
+                "raw": "Чеки"
+            },
+            {
+                "href": "/lk/myrefunds",
+                "raw": "Возвраты"
+            },
+            {
+                "href": "/lk/refund",
+                "raw": "Оформление возврата"
+            },
+            {
+                "href": "/lk/communications",
+                "raw": "Обращения"
+            },
+            {
+                "href": "/lk/claims",
+                "raw": "Проверка товара"
+            },
+            {
+                "href": "/lk/discussion/feedback?type=Comments",
+                "raw": "Отзывы и вопросы"
+            },
+            {
+                "href": "/lk/discussion/feedback?type=Comments",
+                "raw": "Отзывы"
+            },
+            {
+                "href": "/lk/discussion/feedback?type=Questions",
+                "raw": "Вопросы"
+            },
+            {
+                "href": "/lk/mywallet/purchases",
+                "raw": "Баланс"
+            },
+            {
+                "href": "/lk/details",
+                "raw": "Профиль"
+            },
+            {
+                "href": "/lk/details",
+                "raw": "Личные данные"
+            },
+            {
+                "href": "/lk/newsfeed/events",
+                "raw": "Уведомления"
+            },
+            {
+                "href": "/catalog/60753152/feedbacks?size=108127629",
+                "raw": "191отзыв"
+            },
+            {
+                "href": "/lk/basket",
+                "raw": "В корзину"
+            },
+            {
+                "href": "/recommendation/catalog?type=visuallysimilar&forproduct=60753152&excludeNms=true",
+                "raw": "Похожие"
+            },
+            {
+                "href": "#options",
+                "raw": "Все характеристики"
+            },
+            {
+                "raw": "Elite Shop"
+            },
+            {
+                "href": "https://www.wildberries.ru/catalog/60753152/detail.aspx?targetUrl=SN#Comments",
+                "raw": "5191отзыв"
+            },
+            {
+                "raw": "Все товары Elite Shop"
+            },
+            {
+                "href": "/brands/elite-shop/nozhi-turisticheskie",
+                "raw": "Все ножи туристическиеElite Shop"
+            },
+            {
+                "raw": "Все ножи туристические в категории"
+            },
+            {
+                "href": "/lk/basket",
+                "raw": "Перейти в корзину"
+            },
+            {
+                "href": "/lk/booking",
+                "raw": "В корзине 0 шт."
+            },
+            {
+                "href": "#full-list",
+                "raw": "У других продавцов от"
+            },
+            {
+                "href": "/services/kak-sdelat-zakaz",
+                "raw": "Как сделать заказ"
+            },
+            {
+                "href": "/services/sposoby-oplaty",
+                "raw": "Способы оплаты"
+            },
+            {
+                "href": "/services/besplatnaya-dostavka",
+                "raw": "Доставка"
+            },
+            {
+                "href": "/services/vozvrat-tovara",
+                "raw": "Возврат товара"
+            },
+            {
+                "href": "/services/vozvrat-denezhnyh-sredstv",
+                "raw": "Возврат денежных средств"
+            },
+            {
+                "href": "/services/pravila-prodazhi",
+                "raw": "Правила продажи"
+            },
+            {
+                "href": "/services/pravila-polzovaniya-torgovoy-ploshchadkoy",
+                "raw": "Правила пользования торговой площадкой"
+            },
+            {
+                "href": "/services/voprosy-i-otvety",
+                "raw": "Вопросы и ответы"
+            },
+            {
+                "href": "/promo/priglashaem-k-sotrudnichestvu",
+                "raw": "Перевозчикам"
+            },
+            {
+                "href": "https://point-promo.wb.ru/",
+                "raw": "Партнерский пункт выдачи"
+            },
+            {
+                "href": "/services/franshizniy-punkt-vydachi",
+                "raw": "Франшизный пункт выдачи"
+            },
+            {
+                "href": "https://guru.wildberries.ru/?utm_source=main_footer",
+                "raw": "WB Guru"
+            },
+            {
+                "href": "/services/o-nas",
+                "raw": "О нас"
+            },
+            {
+                "href": "/services/rekvizity",
+                "raw": "Реквизиты"
+            },
+            {
+                "href": "/presscenter",
+                "raw": "Пресс-центр"
+            },
+            {
+                "href": "/services/kontakty",
+                "raw": "Контакты"
+            },
+            {
+                "href": "/services/bug-bounty",
+                "raw": "Bug Bounty"
+            },
+            {
+                "href": "http://vk.com/club9695053",
+                "raw": "Вконтакте"
+            },
+            {
+                "href": "http://www.odnoklassniki.ru/wildberries",
+                "raw": "Одноклассники"
+            },
+            {
+                "href": "https://www.youtube.com/Wildberriesshop",
+                "raw": "YouTube"
+            },
+            {
+                "href": "https://play.google.com/store/apps/details?id=com.wildberries.ru",
+                "raw": "Загрузить из Google Play"
+            },
+            {
+                "href": "https://apps.apple.com/ru/app/wildberries/id597880187",
+                "raw": "Загрузить из AppStore"
+            },
+            {
+                "href": "https://appgallery8.huawei.com/#/app/C101183325",
+                "raw": "Загрузить из AppGallery"
+            },
+            {
+                "href": "/services/proverka-sovmestimosti",
+                "raw": "Проверка совместимости"
+            },
+            {
+                "href": "/lk/basket",
+                "raw": "0"
+            }
+        ],
+        "input": [
+            {
+                "tag": "INPUT",
+                "type": "radio"
+            }
+        ],
+        "list": [
+            {
+                "list_entry": [
+                    {
+                        "tag": "LI",
+                        "raw": "RuВыберите странуРоссия(Russia)(Ru)Армения(Armenia)(Am)Беларусь(Belarus)(By)Израиль(Israel)(Il)Казахстан(Kazakhstan)(Kz)Киргизия(Kyrgyzstan)(Kg)Узбекистан(Uzbekistan)(Uz)"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Санкт-Петербург"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Бесплатная доставка"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Трудоустройство"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Продавайте на Wildberries"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Работа в Wildberries"
+                    }
+                ],
+                "$data": {
+                    "tag": "UL"
+                }
+            },
+            {
+                "list_entry": [
+                    {
+                        "tag": "LI",
+                        "raw": "Женщинам"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Обувь"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Детям"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Мужчинам"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Дом"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Красота"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Аксессуары"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Электроника"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Игрушки"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Мебель"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Товары для взрослых"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Продукты"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Бытовая техника"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Зоотовары"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Спорт"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Автотовары"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Школа"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Книги"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Premium"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Ювелирные изделия"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Для ремонта"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Алкоголь"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Сад и дача"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Здоровье"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Канцтовары"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Цифровые товары"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Экспресс-доставка"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Акции"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Авиабилеты"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Бренды"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Видеообзоры"
+                    }
+                ],
+                "$data": {
+                    "tag": "UL"
+                }
+            },
+            {
+                "list_entry": [
+                    {
+                        "tag": "LI",
+                        "raw": "Избранное"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Любимые бренды"
+                    }
+                ],
+                "$data": {
+                    "tag": "UL"
+                }
+            },
+            {
+                "list_entry": [
+                    {
+                        "tag": "LI",
+                        "raw": "Доставки"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Покупки"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Чеки"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Возвраты"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Оформление возврата"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Авиабилеты"
+                    }
+                ],
+                "$data": {
+                    "tag": "UL"
+                }
+            },
+            {
+                "list_entry": [
+                    {
+                        "tag": "LI",
+                        "raw": "Обращения"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Проверка товара"
+                    }
+                ],
+                "$data": {
+                    "tag": "UL"
+                }
+            },
+            {
+                "list_entry": [
+                    {
+                        "tag": "LI",
+                        "raw": "Отзывы"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Вопросы"
+                    }
+                ],
+                "$data": {
+                    "tag": "UL"
+                }
+            },
+            {
+                "list_entry": [
+                    {
+                        "tag": "LI",
+                        "raw": "Личные данные"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Уведомления"
+                    }
+                ],
+                "$data": {
+                    "tag": "UL"
+                }
+            },
+            {
+                "list_entry": [
+                    {
+                        "tag": "LI",
+                        "raw": "Избранное"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Любимые бренды"
+                    }
+                ],
+                "$data": {
+                    "tag": "UL"
+                }
+            },
+            {
+                "list_entry": [
+                    {
+                        "tag": "LI",
+                        "raw": "Доставки"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Покупки"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Чеки"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Возвраты"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Оформление возврата"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Авиабилеты"
+                    }
+                ],
+                "$data": {
+                    "tag": "UL"
+                }
+            },
+            {
+                "list_entry": [
+                    {
+                        "tag": "LI",
+                        "raw": "Обращения"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Проверка товара"
+                    }
+                ],
+                "$data": {
+                    "tag": "UL"
+                }
+            },
+            {
+                "list_entry": [
+                    {
+                        "tag": "LI",
+                        "raw": "Личные данные"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Уведомления"
+                    }
+                ],
+                "$data": {
+                    "tag": "UL"
+                }
+            },
+            {
+                "list_entry": [],
+                "$data": {
+                    "tag": "UL"
+                }
+            },
+            {
+                "list_entry": [
+                    {
+                        "tag": "LI",
+                        "raw": "Товары для взрослых"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Товары для взрослых"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Товары для взрослых"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Товары для взрослых"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Товары для взрослых"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Товары для взрослых"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Товары для взрослых"
+                    }
+                ],
+                "$data": {
+                    "tag": "UL"
+                }
+            },
+            {
+                "list_entry": [
+                    {
+                        "tag": "LI",
+                        "raw": ""
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": ""
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": ""
+                    }
+                ],
+                "$data": {
+                    "tag": "UL"
+                }
+            },
+            {
+                "list_entry": [
+                    {
+                        "tag": "LI",
+                        "raw": "Бесплатная доставка"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "21 день на возврат"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Примерка"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Бесплатный подъем на этаж"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": ""
+                    }
+                ],
+                "$data": {
+                    "tag": "UL"
+                }
+            },
+            {
+                "list_entry": [
+                    {
+                        "tag": "LI",
+                        "raw": "Отзывы 191"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Вопросы 0"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Статьи 0"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Видео 0"
+                    }
+                ],
+                "$data": {
+                    "tag": "UL"
+                }
+            },
+            {
+                "list_entry": [
+                    {
+                        "tag": "LI",
+                        "raw": "Как сделать заказ"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Способы оплаты"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Доставка"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Возврат товара"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Возврат денежных средств"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Правила продажи"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Правила пользования торговой площадкой"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Вопросы и ответы"
+                    }
+                ],
+                "$data": {
+                    "tag": "UL"
+                }
+            },
+            {
+                "list_entry": [
+                    {
+                        "tag": "LI",
+                        "raw": "Продавайте на Wildberries"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Перевозчикам"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Партнерский пункт выдачи"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Франшизный пункт выдачи"
+                    }
+                ],
+                "$data": {
+                    "tag": "UL"
+                }
+            },
+            {
+                "list_entry": [
+                    {
+                        "tag": "LI",
+                        "raw": "WB Guru"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Трудоустройство"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Цифровые товары"
+                    }
+                ],
+                "$data": {
+                    "tag": "UL"
+                }
+            },
+            {
+                "list_entry": [
+                    {
+                        "tag": "LI",
+                        "raw": "О нас"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Реквизиты"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Пресс-центр"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Контакты"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Bug Bounty"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "WB.Tech"
+                    }
+                ],
+                "$data": {
+                    "tag": "UL"
+                }
+            },
+            {
+                "list_entry": [
+                    {
+                        "tag": "LI",
+                        "raw": "Вконтакте"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Одноклассники"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "YouTube"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Телеграм"
+                    }
+                ],
+                "$data": {
+                    "tag": "UL"
+                }
+            },
+            {
+                "list_entry": [
+                    {
+                        "tag": "LI",
+                        "raw": "Загрузить из Google Play"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Загрузить из AppStore"
+                    },
+                    {
+                        "tag": "LI",
+                        "raw": "Загрузить из AppGallery"
+                    }
+                ],
+                "$data": {
+                    "tag": "UL"
+                }
+            }
+        ],
+        "list_entry": [
+            {
+                "tag": "LI",
+                "raw": "RuВыберите странуРоссия(Russia)(Ru)Армения(Armenia)(Am)Беларусь(Belarus)(By)Израиль(Israel)(Il)Казахстан(Kazakhstan)(Kz)Киргизия(Kyrgyzstan)(Kg)Узбекистан(Uzbekistan)(Uz)"
+            },
+            {
+                "tag": "LI",
+                "raw": "Санкт-Петербург"
+            },
+            {
+                "tag": "LI",
+                "raw": "Бесплатная доставка"
+            },
+            {
+                "tag": "LI",
+                "raw": "Трудоустройство"
+            },
+            {
+                "tag": "LI",
+                "raw": "Продавайте на Wildberries"
+            },
+            {
+                "tag": "LI",
+                "raw": "Работа в Wildberries"
+            },
+            {
+                "tag": "LI",
+                "raw": "Женщинам"
+            },
+            {
+                "tag": "LI",
+                "raw": "Обувь"
+            },
+            {
+                "tag": "LI",
+                "raw": "Детям"
+            },
+            {
+                "tag": "LI",
+                "raw": "Мужчинам"
+            },
+            {
+                "tag": "LI",
+                "raw": "Дом"
+            },
+            {
+                "tag": "LI",
+                "raw": "Красота"
+            },
+            {
+                "tag": "LI",
+                "raw": "Аксессуары"
+            },
+            {
+                "tag": "LI",
+                "raw": "Электроника"
+            },
+            {
+                "tag": "LI",
+                "raw": "Игрушки"
+            },
+            {
+                "tag": "LI",
+                "raw": "Мебель"
+            },
+            {
+                "tag": "LI",
+                "raw": "Товары для взрослых"
+            },
+            {
+                "tag": "LI",
+                "raw": "Продукты"
+            },
+            {
+                "tag": "LI",
+                "raw": "Бытовая техника"
+            },
+            {
+                "tag": "LI",
+                "raw": "Зоотовары"
+            },
+            {
+                "tag": "LI",
+                "raw": "Спорт"
+            },
+            {
+                "tag": "LI",
+                "raw": "Автотовары"
+            },
+            {
+                "tag": "LI",
+                "raw": "Школа"
+            },
+            {
+                "tag": "LI",
+                "raw": "Книги"
+            },
+            {
+                "tag": "LI",
+                "raw": "Premium"
+            },
+            {
+                "tag": "LI",
+                "raw": "Ювелирные изделия"
+            },
+            {
+                "tag": "LI",
+                "raw": "Для ремонта"
+            },
+            {
+                "tag": "LI",
+                "raw": "Алкоголь"
+            },
+            {
+                "tag": "LI",
+                "raw": "Сад и дача"
+            },
+            {
+                "tag": "LI",
+                "raw": "Здоровье"
+            },
+            {
+                "tag": "LI",
+                "raw": "Канцтовары"
+            },
+            {
+                "tag": "LI",
+                "raw": "Цифровые товары"
+            },
+            {
+                "tag": "LI",
+                "raw": "Экспресс-доставка"
+            },
+            {
+                "tag": "LI",
+                "raw": "Акции"
+            },
+            {
+                "tag": "LI",
+                "raw": "Авиабилеты"
+            },
+            {
+                "tag": "LI",
+                "raw": "Бренды"
+            },
+            {
+                "tag": "LI",
+                "raw": "Видеообзоры"
+            },
+            {
+                "tag": "LI",
+                "raw": "Главная"
+            },
+            {
+                "tag": "LI",
+                "raw": "Избранное"
+            },
+            {
+                "tag": "LI",
+                "raw": "Любимые бренды"
+            },
+            {
+                "tag": "LI",
+                "raw": "Доставки"
+            },
+            {
+                "tag": "LI",
+                "raw": "Покупки"
+            },
+            {
+                "tag": "LI",
+                "raw": "Чеки"
+            },
+            {
+                "tag": "LI",
+                "raw": "Возвраты"
+            },
+            {
+                "tag": "LI",
+                "raw": "Оформление возврата"
+            },
+            {
+                "tag": "LI",
+                "raw": "Обращения"
+            },
+            {
+                "tag": "LI",
+                "raw": "Проверка товара"
+            },
+            {
+                "tag": "LI",
+                "raw": "Отзывы"
+            },
+            {
+                "tag": "LI",
+                "raw": "Вопросы"
+            },
+            {
+                "tag": "LI",
+                "raw": "Баланс"
+            },
+            {
+                "tag": "LI",
+                "raw": "Личные данные"
+            },
+            {
+                "tag": "LI",
+                "raw": "Уведомления"
+            },
+            {
+                "tag": "LI",
+                "raw": ""
+            },
+            {
+                "tag": "LI",
+                "raw": "21 день на возврат"
+            },
+            {
+                "tag": "LI",
+                "raw": "Примерка"
+            },
+            {
+                "tag": "LI",
+                "raw": "Бесплатный подъем на этаж"
+            },
+            {
+                "tag": "LI",
+                "raw": "Отзывы 191"
+            },
+            {
+                "tag": "LI",
+                "raw": "Вопросы 0"
+            },
+            {
+                "tag": "LI",
+                "raw": "Статьи 0"
+            },
+            {
+                "tag": "LI",
+                "raw": "Видео 0"
+            },
+            {
+                "tag": "LI",
+                "raw": "Как сделать заказ"
+            },
+            {
+                "tag": "LI",
+                "raw": "Способы оплаты"
+            },
+            {
+                "tag": "LI",
+                "raw": "Доставка"
+            },
+            {
+                "tag": "LI",
+                "raw": "Возврат товара"
+            },
+            {
+                "tag": "LI",
+                "raw": "Возврат денежных средств"
+            },
+            {
+                "tag": "LI",
+                "raw": "Правила продажи"
+            },
+            {
+                "tag": "LI",
+                "raw": "Правила пользования торговой площадкой"
+            },
+            {
+                "tag": "LI",
+                "raw": "Вопросы и ответы"
+            },
+            {
+                "tag": "LI",
+                "raw": "Перевозчикам"
+            },
+            {
+                "tag": "LI",
+                "raw": "Партнерский пункт выдачи"
+            },
+            {
+                "tag": "LI",
+                "raw": "Франшизный пункт выдачи"
+            },
+            {
+                "tag": "LI",
+                "raw": "WB Guru"
+            },
+            {
+                "tag": "LI",
+                "raw": "О нас"
+            },
+            {
+                "tag": "LI",
+                "raw": "Реквизиты"
+            },
+            {
+                "tag": "LI",
+                "raw": "Пресс-центр"
+            },
+            {
+                "tag": "LI",
+                "raw": "Контакты"
+            },
+            {
+                "tag": "LI",
+                "raw": "Bug Bounty"
+            },
+            {
+                "tag": "LI",
+                "raw": "WB.Tech"
+            },
+            {
+                "tag": "LI",
+                "raw": "Вконтакте"
+            },
+            {
+                "tag": "LI",
+                "raw": "Одноклассники"
+            },
+            {
+                "tag": "LI",
+                "raw": "YouTube"
+            },
+            {
+                "tag": "LI",
+                "raw": "Телеграм"
+            },
+            {
+                "tag": "LI",
+                "raw": "Загрузить из Google Play"
+            },
+            {
+                "tag": "LI",
+                "raw": "Загрузить из AppStore"
+            },
+            {
+                "tag": "LI",
+                "raw": "Загрузить из AppGallery"
+            }
+        ],
+        "nav": [],
+        "sidebar": [],
+        "header": [
+            {}
+        ],
+        "section": [
+            {}
+        ],
+        "footer": [
+            {
+                "link": [
+                    {
+                        "href": "/services/kak-sdelat-zakaz",
+                        "raw": "Как сделать заказ"
+                    },
+                    {
+                        "href": "/services/sposoby-oplaty",
+                        "raw": "Способы оплаты"
+                    },
+                    {
+                        "href": "/services/besplatnaya-dostavka",
+                        "raw": "Доставка"
+                    },
+                    {
+                        "href": "/services/vozvrat-tovara",
+                        "raw": "Возврат товара"
+                    },
+                    {
+                        "href": "/services/vozvrat-denezhnyh-sredstv",
+                        "raw": "Возврат денежных средств"
+                    },
+                    {
+                        "href": "/services/pravila-prodazhi",
+                        "raw": "Правила продажи"
+                    },
+                    {
+                        "href": "/services/pravila-polzovaniya-torgovoy-ploshchadkoy",
+                        "raw": "Правила пользования торговой площадкой"
+                    },
+                    {
+                        "href": "/services/voprosy-i-otvety",
+                        "raw": "Вопросы и ответы"
+                    },
+                    {
+                        "href": "https://seller.wildberries.ru/",
+                        "raw": "Продавайте на Wildberries"
+                    },
+                    {
+                        "href": "/promo/priglashaem-k-sotrudnichestvu",
+                        "raw": "Перевозчикам"
+                    },
+                    {
+                        "href": "https://point-promo.wb.ru/",
+                        "raw": "Партнерский пункт выдачи"
+                    },
+                    {
+                        "href": "/services/franshizniy-punkt-vydachi",
+                        "raw": "Франшизный пункт выдачи"
+                    },
+                    {
+                        "href": "https://guru.wildberries.ru/?utm_source=main_footer",
+                        "raw": "WB Guru"
+                    },
+                    {
+                        "href": "https://vsemrabota.ru/appwb/",
+                        "raw": "Трудоустройство"
+                    },
+                    {
+                        "href": "https://digital.wildberries.ru/",
+                        "raw": "Цифровые товары"
+                    },
+                    {
+                        "href": "/services/o-nas",
+                        "raw": "О нас"
+                    },
+                    {
+                        "href": "/services/rekvizity",
+                        "raw": "Реквизиты"
+                    },
+                    {
+                        "href": "/presscenter",
+                        "raw": "Пресс-центр"
+                    },
+                    {
+                        "href": "/services/kontakty",
+                        "raw": "Контакты"
+                    },
+                    {
+                        "href": "/services/bug-bounty",
+                        "raw": "Bug Bounty"
+                    },
+                    {
+                        "href": "http://vk.com/club9695053",
+                        "raw": "Вконтакте"
+                    },
+                    {
+                        "href": "http://www.odnoklassniki.ru/wildberries",
+                        "raw": "Одноклассники"
+                    },
+                    {
+                        "href": "https://www.youtube.com/Wildberriesshop",
+                        "raw": "YouTube"
+                    },
+                    {
+                        "href": "https://play.google.com/store/apps/details?id=com.wildberries.ru",
+                        "raw": "Загрузить из Google Play"
+                    },
+                    {
+                        "href": "https://apps.apple.com/ru/app/wildberries/id597880187",
+                        "raw": "Загрузить из AppStore"
+                    },
+                    {
+                        "href": "https://appgallery8.huawei.com/#/app/C101183325",
+                        "raw": "Загрузить из AppGallery"
+                    },
+                    {
+                        "href": "/services/proverka-sovmestimosti",
+                        "raw": "Проверка совместимости"
+                    }
+                ]
+            }
+        ],
+        "form": [
+            {
+                "input": [
+                    {
+                        "tag": "INPUT",
+                        "type": "file"
+                    }
+                ],
+                "button": []
+            },
+            {
+                "input": [
+                    {
+                        "tag": "INPUT",
+                        "type": "file"
+                    },
+                    {
+                        "tag": "TEXTAREA",
+                        "placeholder": "Ваше сообщение..."
+                    }
+                ],
+                "button": [
+                    {
+                        "type": "submit",
+                        "raw": ""
+                    }
+                ]
+            }
+        ]
+    }
+}
