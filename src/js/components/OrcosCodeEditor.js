@@ -136,7 +136,10 @@ export const OrcosCodeEditor = class extends HTMLElement {
         editor.defineTheme('iplastic', theme);
 
         this.root = editor.create(this.rootElement, {
-            fontSize: '16px',
+            fontSize: '18px',
+            fontFamily: "Menlo, Monaco, 'Courier New', monospace",
+            lineHeight: 24,
+            tabSize: 4,
             minimap: { enabled: false },
             parameterHints: { enabled: true },
             scrollBeyondLastLine: false,
@@ -146,6 +149,7 @@ export const OrcosCodeEditor = class extends HTMLElement {
         })
         this.root.setValue(this.#code)
 
+        // Enable autocompletion
         this.addAutocomplete({
             ref: window.ref,
             el: window.el

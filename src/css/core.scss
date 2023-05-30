@@ -1,19 +1,19 @@
-html,body,#app {
+html, body, #app {
     width: 100vw;
     height: 100vh;
 
     overflow: hidden;
 
     background-color: var(--color-2);
+
+    font-family: var(--font-text);;
 }
 
-*,*::before,*::after {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
 
     box-sizing: border-box;
-
-    font-family: var(--font-text);
 }
 
 hr {
@@ -143,7 +143,7 @@ aside {
     background-color: #1f1e1e;
     color: var(--color-2);
 
-    font-family: Menlo, 'Courier New', Courier, monospace;
+    font-family: var(--font-code);
     font-weight: 500;
 }
 
@@ -514,9 +514,6 @@ orcos-sandbox {
 orcos-code-editor, orcos-code-editor #code-editor-root {
     width: 100%;
     height: 100%;
-}
-orcos-code-editor * {
-    font-family: var(--font-code) !important;
 }
 
 orcos-log {

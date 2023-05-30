@@ -113,9 +113,7 @@ window.Project = new class {
         parentPair.link.querySelector('.nodes')?.appendChild(this.treeElement.makeNode(newElement))
     }
 
-    constructor() {
-        let template = Templates.components['basic']
-
+    constructor(template = Templates.components.basic) {
         // Make root element
         this.rootElement = document.createElement('orcos-root-component')
         this.rootElement.setAttribute('orcos-name', 'Component')

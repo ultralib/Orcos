@@ -17,6 +17,7 @@ export const OrcosProperties = class extends HTMLElement {
         this.__render__()
     }
 
+    //#region Creating elements (Category, Field)
     __categoryToElement__(categoryName, category) {
         let propsHtml = ''
 
@@ -110,9 +111,17 @@ export const OrcosProperties = class extends HTMLElement {
             </div>
         `
     }
+    //#endregion
 
     get fontFamilies() { 
         return Utils.fonts.macOs
+    }
+
+    get inputElements() {
+        return [
+            'INPUT', 'SELECT', 'TEXTAREA',
+            'ORCOS-UNITS-INPUT', 'ORCOS-SPACING-INPUT'
+        ]
     }
 
     get baseProperties() {
@@ -249,11 +258,8 @@ export const OrcosProperties = class extends HTMLElement {
                     },
                     size: {
                         title: 'Text size',
-                        type: 'range',
-                        min: 2,
-                        max: 186,
-                        get: (el) => el.style['font-size'].replace('px', ''),
-                        set: (el, val) => el.style['font-size'] = val + 'px'
+                        type: 'units',
+                        prop: 'font-size'
                     },
                     align: {
                         title: 'Align',
@@ -378,6 +384,7 @@ export const OrcosProperties = class extends HTMLElement {
         }
     }
 
+    // Checking should we show category for this element based on category.for value
     filterCategory(forValue, tag) {
         tag = tag.toUpperCase()
 
@@ -395,6 +402,7 @@ export const OrcosProperties = class extends HTMLElement {
             return forValue.includes('block')
     }
 
+    //#region Element property (get/set)
     getElementPropertyValue(el, styleProperty) {
         // Get from element style
         let value = el.style[styleProperty]
@@ -413,6 +421,7 @@ export const OrcosProperties = class extends HTMLElement {
     setElementPropertyValue(el, styleProperty, value) {
         el.style[styleProperty] = value
     }
+    //#endregion
 
     __render__() {
         if(this.attachedEl) {
@@ -432,11 +441,7 @@ export const OrcosProperties = class extends HTMLElement {
                     categoryEl.parentElement.classList.toggle('visible')
                 })
             })
-            
-            let inputElements = [
-                'INPUT', 'SELECT', 'TEXTAREA',
-                'ORCOS-UNITS-INPUT', 'ORCOS-SPACING-INPUT'
-            ]
+        
             // Apply values & watch changes
             this.querySelectorAll('.property-field').forEach(fieldEl => {
                 let fieldObject = this.baseProperties[fieldEl.getAttribute('category')]
@@ -456,7 +461,7 @@ export const OrcosProperties = class extends HTMLElement {
                 }
 
                 // Basic input
-                if(inputElements.includes(fieldEl.tagName)) {
+                if(this.inputElements.includes(fieldEl.tagName)) {
                     // Apply value from attached element to the input
                     fieldEl.value = currentValue ?? ''
 

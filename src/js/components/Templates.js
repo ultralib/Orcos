@@ -27,7 +27,7 @@ export default {
                 font-family:'Inter','Roboto',sans-serif;
             `,
             baseLogic: `let count = ref(0)\nel('#counter').innerText = count\nel('#incrementBtn').onclick = () => { count.value++ }`,
-            inner: `
+            baseContent: `
                 <style component-style scoped>${CoreCSS}</style>
                 <h1 id="counter" style="margin:0px 0px 5px 0px;">0</h1>
                 <button id="incrementBtn">Increment</button>

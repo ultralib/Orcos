@@ -28,7 +28,7 @@ export const OrcosRootComponent = class extends HTMLElement {
 
     useTemplate(template) {
         this.setAttribute('style', template.baseStyle || '')
-        this.innerHTML = template.inner || ''
+        this.innerHTML = template.baseContent || ''
     }
 
     serialize() {
