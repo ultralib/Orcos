@@ -1,5 +1,5 @@
 
-<img alt="Orcos" style="width:100%;" src="https://github.com/qrai/Orcos/blob/main/etc/editor.png?raw=true">
+<img alt="Orcos" style="width:100%;" src="https://github.com/qrai/Orcos/blob/main/etc/editor.png?raw=true" style="border-radius: 20px">
 
 Service for building functional UI kits visually, with low-code.
 
