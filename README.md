@@ -1,4 +1,6 @@
-# Orcos
+
+<img alt="Orcos" style="width:100%;" src="https://github.com/qrai/Orcos/blob/master/etc/editor.png?raw=true">
+
 Service for building functional UI kits visually, with low-code.
 
 # Technology
