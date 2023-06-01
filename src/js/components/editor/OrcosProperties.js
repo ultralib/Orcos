@@ -1,4 +1,4 @@
-import Utils from "./Utils"
+import Utils from "../../core/Utils"
 
 export const OrcosProperties = class extends HTMLElement {
     constructor() {
@@ -120,7 +120,8 @@ export const OrcosProperties = class extends HTMLElement {
     get inputElements() {
         return [
             'INPUT', 'SELECT', 'TEXTAREA',
-            'ORCOS-UNITS-INPUT', 'ORCOS-SPACING-INPUT'
+            'ORCOS-UNITS-INPUT', 'ORCOS-SPACING-INPUT',
+            'ORCOS-SELECT-INPUT'
         ]
     }
 
@@ -325,9 +326,9 @@ export const OrcosProperties = class extends HTMLElement {
                         type: 'select',
                         placeholder: 'Select display mode',
                         options: [
-                            { value: 'none', title: 'None' },
+                            { value: 'none', title: 'None (Hidden)' },
                             { value: 'block', title: 'Block' },
-                            { value: 'flex', title: 'Flex (Auto-layout)' },
+                            { value: 'flex', title: 'Auto-layout (Flex)' },
                             { value: 'inline', title: 'Inline' },
                             { value: 'inline-block', title: 'Inline block' }
                         ],
@@ -351,7 +352,7 @@ export const OrcosProperties = class extends HTMLElement {
                         prop: 'flex-direction'
                     },
                     justify: {
-                        title: 'Justify',
+                        title: 'Justify (Auto-layout)',
                         type: 'select',
                         placeholder: 'Select justify align',
                         options: [
@@ -359,11 +360,15 @@ export const OrcosProperties = class extends HTMLElement {
                             { value: 'flex-start', title: 'Start' },
                             { value: 'center', title: 'Center' },
                             { value: 'flex-end', title: 'End' },
+                            { value: 'space-between', title: 'Space between' },
+                            { value: 'space-around', title: 'Space around' },
+                            { value: 'space-evenly', title: 'Space evenly' },
+                            { value: 'stretch', title: 'Stretch' },
                         ],
                         prop: 'justify-content'
                     },
                     align: {
-                        title: 'Align',
+                        title: 'Align (Auto-layout)',
                         type: 'select',
                         placeholder: 'Select align',
                         options: [
@@ -371,11 +376,12 @@ export const OrcosProperties = class extends HTMLElement {
                             { value: 'flex-start', title: 'Start' },
                             { value: 'center', title: 'Center' },
                             { value: 'flex-end', title: 'End' },
+                            { value: 'stretch', title: 'Stretch' },
                         ],
                         prop: 'align-items'
                     },
                     gap: {
-                        title: 'Gap',
+                        title: 'Gap (Auto-layout)',
                         type: 'units',
                         prop: 'gap'
                     }

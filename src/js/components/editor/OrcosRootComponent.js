@@ -1,4 +1,4 @@
-import Utils from "./Utils"
+import Utils from "../../core/Utils"
 
 export const OrcosRootComponent = class extends HTMLElement {
     constructor() {
@@ -7,8 +7,10 @@ export const OrcosRootComponent = class extends HTMLElement {
 
     unselect() {
         // Self
-        if(this.hasAttribute('selected'))
+        if(this.hasAttribute('selected')) {
             this.removeAttribute('selected')
+            this.blur()
+        }
         // Childs
         else
             this.querySelector('[selected]')?.removeAttribute('selected')

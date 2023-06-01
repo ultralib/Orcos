@@ -26,6 +26,10 @@
         border: 1px solid var(--color-3);
         border-radius: var(--border-radius);
 
+        transition: var(--transition);
+        transition-property: box-shadow;
+
+        // Elements
         p {
             user-select: none;
         }
@@ -39,6 +43,35 @@
         &:hover {
             outline: 3px solid var(--color-accent-alpha);
             border: 1px solid var(--color-accent);
+        }
+
+        // Sizes
+        &-md {
+            flex-grow: 0;
+            max-width: 30%;
+
+            padding: 20px;
+
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+
+            p {
+                margin-left: 8px;
+
+                font-size: 18px;
+            }
+        }
+
+        // Styles
+        &-solid {
+            background: var(--color-1);
+
+            &:hover {
+                outline: none;
+                border: 1px solid var(--color-3);
+                box-shadow: 0 0 2px 2px var(--color-accent);
+            }
         }
     }
 }

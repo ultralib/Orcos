@@ -1,4 +1,4 @@
-import Utils from "./Utils"
+import Utils from "../../core/Utils"
 
 export const OrcosTreeView = class extends HTMLElement {
     constructor() {

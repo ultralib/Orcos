@@ -1,7 +1,7 @@
-import CoreJS from '!raw-loader!../lib/Core.js'
-import CatchJS from '!raw-loader!../lib/Catch.js'
-import ClearCSS from '!raw-loader!../lib/Clear.css'
-import CoreCSS from '!raw-loader!../lib/Core.css'
+import CoreJS from '!raw-loader!../../lib/Core.js'
+import CatchJS from '!raw-loader!../../lib/Catch.js'
+import ClearCSS from '!raw-loader!../../lib/Clear.css'
+import CoreCSS from '!raw-loader!../../lib/Core.css'
 
 export const OrcosSandbox = class extends HTMLElement {
     constructor() {

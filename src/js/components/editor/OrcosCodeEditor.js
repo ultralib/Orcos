@@ -1,5 +1,5 @@
 import * as monaco from 'monaco-editor'
-import '../lib/Core.js'
+import '../../lib/Core.js'
 
 const { editor, languages } = monaco
 

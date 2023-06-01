@@ -1,6 +1,3 @@
-import Utils from "./Utils"
-
-
 export const OrcosTreeNode = class extends HTMLElement {
     constructor() {
         super()
