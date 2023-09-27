@@ -1,9 +1,14 @@
 window.$deps = {}
 
+const Is = {
+    State: 'state'
+}
+
 // Creating reactive data
-window.ref = function(value, type = null) {
+window.useState = function(value, type = null) {
     return new Proxy({
-        is: 'reference',
+        is: Is.State,
+
         // Dependencies
         dependencies: [],
         addDependency(dep) {
@@ -17,6 +22,7 @@ window.ref = function(value, type = null) {
         removeDependencies() {
             this.dependencies = []
         },
+
         // Value
         value: value,
         type: type
@@ -51,7 +57,7 @@ window.ref = function(value, type = null) {
 }
 
 // Accessing elements
-window.el = function(selector) {
+window.useElement = function(selector) {
     if(selector == null) {
         selector = 'orcos-com'
     }
@@ -68,7 +74,7 @@ window.el = function(selector) {
 
         bind(ref) {
             // Check ref
-            if(ref?.is !== 'reference') {
+            if(ref?.is !== Is.State) {
                 throw new Error('Failed to bind: value was not reference')
             }
 
@@ -102,7 +108,7 @@ window.el = function(selector) {
         set(target, prop, value) {
             if(prop in target.$el) {
                 // Set reference value
-                if(value?.is === 'reference') {
+                if(value?.is === Is.State) {
                     // Set initial value
                     target.$el[prop] = value.value
                     // Add dependency to change value when ref changed

@@ -268,6 +268,12 @@ export const OrcosProperties = class extends HTMLElement {
                         placeholder: 'Choose align',
                         prop: 'text-align',
                     },
+                    lineHeight: {
+                        title: 'Line height',
+                        type: 'units',
+                        placeholder: 'Choose line height',
+                        prop: 'line-height',
+                    },
                     font: {
                         title: 'Font',
                         type: 'font',

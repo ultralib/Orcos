@@ -1,7 +1,7 @@
-import CoreJS from '!raw-loader!../../lib/Core.js'
-import CatchJS from '!raw-loader!../../lib/Catch.js'
-import ClearCSS from '!raw-loader!../../lib/Clear.css'
-import CoreCSS from '!raw-loader!../../lib/Core.css'
+import CoreJS from '!raw-loader!../../lib/core.js'
+import CatchJS from '!raw-loader!../../lib/catch.js'
+import ResetCSS from '!raw-loader!../../lib/reset.css'
+import CoreCSS from '!raw-loader!../../lib/core.css'
 
 export const OrcosSandbox = class extends HTMLElement {
     constructor() {
@@ -45,7 +45,7 @@ export const OrcosSandbox = class extends HTMLElement {
         frame.setAttribute('seamless', '')
         frame.setAttribute('srcdoc', `
             <!-- Styles -->
-            <style>${ClearCSS}</style>
+            <style>${ResetCSS}</style>
             <style>${CoreCSS}</style>
 
             <!-- Component -->
@@ -56,7 +56,7 @@ export const OrcosSandbox = class extends HTMLElement {
             <!-- Logic -->
             <script>${CoreJS}</script>
             <script>${CatchJS}</script>
-            <script>try{${js}}catch(e){console.log(e)}</script>
+            <script>try{${js}}catch(e){console.error(e)}</script>
         `)
 
         // Handle sandbox messages

@@ -1,4 +1,4 @@
-import CoreCSS from '!raw-loader!../lib/Core.css'
+import CoreCSS from '!raw-loader!../lib/core.css'
 
 const element = (tag, text, attrs) => {
     let _el = document.createElement(tag)
@@ -26,7 +26,7 @@ export default {
                 background-color:white;
                 font-family:'Inter','Roboto',sans-serif;
             `,
-            baseLogic: `let count = ref(0)\nel('#counter').innerText = count\nel('#incrementBtn').onclick = () => { count.value++ }`,
+            baseLogic: `/* State */\nconst count = useState(0)\nconst counterEl = useElement('#counter')\nconst incrementEl = useElement('#incrementBtn')\n\n/* Logic */\ncounterEl.innerText = count\nincrementEl.onclick = () => {\n\tcount.value++\n}`,
             baseContent: `
                 <style component-style scoped>${CoreCSS}</style>
                 <h1 id="counter" style="margin:0px 0px 5px 0px;">0</h1>
